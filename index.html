@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>Sabai friends</title>
+  <meta name="Description" content="">
+  <meta name="Keywords" content="">
+
+  <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="img/favicon/favicon.png">
+
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="libs/hamburgers.min.css">
+  <link rel="stylesheet" href="libs/flickity.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <link rel="stylesheet" href="css/accordion.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.png">
+</head>
+<body>
+
+  <header class="lvv-header container">
+    <a class="lvv-header-logo-t d-block d-lg-none" href="index.html">
+      <img class="img-responsive" src="img/logo.svg" alt="">
+    </a>
+    <nav id="lvv-nav" class="lvv-nav">
+      <div class="lvv-nav-left">
+        <a class="lvv-nav-item" href="#location">Location</a>
+        <a class="lvv-nav-item" href="#villas">Our Villas</a>
+        <a class="lvv-nav-item" href="#development-progress">Development Progress</a>
+      </div>
+      <a class="lvv-header-logo-d d-none d-lg-block" href="index.html">
+        <img src="img/logo.svg" alt="">
+      </a>
+      <div class="lvv-nav-right">
+        <a class="lvv-nav-item" href="tel:+66847458525">+66 847 458 525</a>
+        <a class="lvv-nav-item" href="#">Get a special offer</a>
+        <div class="lvv-nav-item lang">
+          <div><span class="current-lang">English</span><img src="img/arrow-lang.svg" alt=""></div>
+          <ul>
+            <li><a href="ru.html">Русский</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="lvv-nav-item lang d-block d-lg-none">
+      <div><span class="current-lang">English</span><img src="img/arrow-lang.svg" alt=""></div>
+      <ul>
+        <li><a href="ru.html">Русский</a></li>
+      </ul>
+    </div>
+    <div class="d-flex align-items-center">
+      <a class="phone-tablet d-none d-md-block d-lg-none" href="tel:+66847458525">+66 847 458 525</a>
+      <div id="hamburger" class="hamburger hamburger--squeeze">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <div id="tablet-menu" class="tablet-menu-overlay d-flex d-lg-none">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="tablet-menu">
+            <a class="lvv-nav-item" href="#location">Location</a>
+            <a class="lvv-nav-item" href="#villas">Our Villas</a>
+            <a class="lvv-nav-item" href="#development-progress">Development Progress</a>
+            <button class="lvv-btn-accent">Get a special offer</button>
+            <a class="lvv-nav-item phone" href="tel:+66847458525">+66 847 458 525</a>
+            <div class="social-links">
+              <a href="#"><img src="img/icon-whatsapp.svg" alt=""></a>
+              <a href="#"><img src="img/icon-telegram.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div id="mf-top" class="modal">
+    <a class="modal-close" rel="modal:close"><img src="img/modal-close.svg" alt=""></a>
+    <div class="lvv-contact-form white">
+      <form action="#">
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Phone">
+        <input type="text" placeholder="E-mail">
+        <button class="button-form" type="submit">Get a special offer</button>
+        <div class="bottom-text">
+          Receive a special offer from one of our representatives today
+          <img src="img/contact-form-arrow-up.svg" alt="">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="mf-bottom" class="modal">
+    <a class="modal-close" rel="modal:close"><img src="img/modal-close.svg" alt=""></a>
+    <div class="lvv-contact-form violet">
+      <form action="#">
+        <div class="top-text">
+          Receive a special offer from one of our representatives today
+          <img src="img/contact-form-arrow-down.svg" alt="">
+        </div>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Phone">
+        <input type="text" placeholder="E-mail">
+        <button class="button-form" type="submit">Get a special offer</button>
+      </form>
+    </div>
+  </div> -->
+
+  <div class="lvv-fs">
+    <div class="lvv-fs-tablet d-block d-lg-none"></div>
+    <div class="lvv-fs-scene" id="scene-1">
+      <div class="lvv-fs-bg" data-depth="0.1"></div>
+    </div>
+    <div class="lvv-fs-bg-bottm-line"></div>
+    <div class="content">
+      <div class="container">
+        <h1 class="lvv-h1">Villas for Sale</h1>
+        <h3 class="lvv-h3">Your home with a sea view in Phuket</h3>
+        <div class="row justify-content-center">
+          <div class="col-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+            <div class="lvv-contact-form white">
+              <div class="price-from">
+                from
+                <span class="d-none d-md-block">$920,000</span>
+                <span class="d-block d-md-none">$920K</span></div>
+              <form id="cf">
+                <div class="form-tablet-desktop d-none d-md-block">
+                  <input name="name" type="text" placeholder="Name">
+                  <input name="phone" type="text" placeholder="Phone">
+                  <input name="email" type="text" placeholder="E-mail">
+                  <button class="button-form" type="submit">Get a special offer</button>
+                </div>
+                <div class="form-mobile d-block d-md-none">
+                  <a class="button-form" href="#mf-top" data-modal>Get a special offer</a>
+                </div>
+                <div class="bottom-text">
+                  Receive a special offer from one of our representatives today
+                  <img src="img/contact-form-arrow-up.svg" alt="">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="location" class="lvv-location">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <h2 class="lvv-h2">The Best Place To Live In Phuket</h2>
+          <p class="desc">
+            The La Vista Residence is situated on top of a mountain in south Phuket with a breath-taking view of the sea and the rest of the island. All the necessary infrastructure is located within a 10 minute drive of your new villa.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="lvv-location-carousel" class="lvv-location-carousel">
+      <div class="carousel-item">
+        <div class="carousel-item-wrapper">
+          <div class="min-to-drive">10 min drive</div>
+          <img class="carousel-item-image img-responsive" src="img/location-img-1.jpg" alt="">
+          <div class="bottom-text">to the beaches of Karon, Kata, Patong and Rawai</div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-item-wrapper">
+          <div class="min-to-drive">10 min drive</div>
+          <img class="carousel-item-image img-responsive" src="img/location-img-2.jpg" alt="">
+          <div class="bottom-text">10 min drive from  International schools </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-item-wrapper">
+          <div class="min-to-drive">10 min drive</div>
+          <img class="carousel-item-image img-responsive" src="img/location-img-3.jpg" alt="">
+          <div class="bottom-text">5 min drive from  Tesco Lotus, Macro and Villa Market supermarkets</div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-item-wrapper">
+          <div class="min-to-drive">10 min drive</div>
+          <img class="carousel-item-image img-responsive" src="img/location-img-4.jpg" alt="">
+          <div class="bottom-text">10 min drive  from the Central Phuket Festival</div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carousel-item-wrapper">
+          <div class="min-to-drive">10 min drive</div>
+          <img class="carousel-item-image img-responsive" src="img/location-img-5.jpg" alt="">
+          <div class="bottom-text">5 min drive from international hospital</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img class="img-responsive d-block d-lg-none" src="img/lvv-videoblock-bg-tablet.svg" alt="">
+  <div class="lvv-videoblock">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <h2 class="lvv-h2">Choose Your Home</h2>
+          <p class="desc">
+            La Vista is a cosy club project of luxury villas based upon the principles of environmental sustainability, family values and safety. 
+          </p>
+        </div>
+        <div class="col-lg-8">
+          <div class="lvv-videoblock-bg">
+            <iframe src="https://player.vimeo.com/video/761450449?h=f4e6381127&title=0&byline=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="lvv-videoblock-bottom-text">The project is made up of 9 villas of 3 different types</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="villas" class="lvv-villas">
+    <div class="container">
+      <div class="row justify-content-center justify-content-lg-start type-a">
+        <div class="col-md-8 col-lg-5">
+          <div class="lvv-villas-carousel-wrapper">
+            <div class="villa-type d-block d-lg-none">Type A</div>
+            <div class="lvv-villas-price">
+              from
+              <span class="d-none d-md-block">$920,000</span>
+              <span class="d-block d-md-none">$920K</span>
+            </div>
+            <div class="lvv-villas-carousel">
+              <div class="carousel-item">
+                <img class="img-responsive" src="img/villas-img-1-1.jpg" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="img-responsive" src="img/villas-img-1-1.jpg" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="img-responsive" src="img/villas-img-1-1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-6">
+          <div class="villa-type d-none d-lg-block">Type A</div>
+          <div class="villa-characteristics border d-none d-md-block">
+            <div class="villa-characteristic"><img src="img/icon-square.svg" alt="">450 m<sup>2</sup></div>
+            <div class="villa-characteristic"><img src="img/icon-two-storey.svg" alt="">Two-story</div>
+            <div class="villa-characteristic"><img src="img/icon-bedrooms.svg" alt="">Four bedrooms</div>
+            <div class="villa-characteristic"><img src="img/icon-parking.svg" alt="">Two parking spaces</div>
+            <div class="villa-characteristic"><img src="img/icons-pool.svg" alt="">30 m<sup>2</sup> pool</div>
+            <div class="villa-characteristic"><img src="img/icon-view-garden.svg" alt="">Tropical garden view</div>
+          </div>
+          <div class="accordion d-block d-md-none">
+            <div class="accordion__item">
+              <div class="accordion__title">
+                <img class="accordion__arrow" src="img/accordion-arrow.svg" alt="">
+                <img class="accordion__arrow active" src="img/accordion-arrow-active.svg" alt="">
+                <div class="accordion__title-text">Specifications Type A</div>
+              </div>
+              <div class="accordion__content">
+                <div class="villa-characteristics">
+                  <div class="villa-characteristic"><img src="img/icon-square.svg" alt="">450 m<sup>2</sup></div>
+                  <div class="villa-characteristic"><img src="img/icon-two-storey.svg" alt="">Two-story</div>
+                  <div class="villa-characteristic"><img src="img/icon-bedrooms.svg" alt="">Four bedrooms</div>
+                  <div class="villa-characteristic"><img src="img/icon-parking.svg" alt="">Two parking spaces</div>
+                  <div class="villa-characteristic"><img src="img/icons-pool.svg" alt="">30 m<sup>2</sup> pool</div>
+                  <div class="villa-characteristic"><img src="img/icon-view-garden.svg" alt="">Tropical garden view</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center justify-content-lg-end type-b">
+        <div class="col-md-8 col-lg-6">
+          <div class="villa-type d-none d-lg-block">Type B</div>
+          <div class="villa-characteristics border d-none d-md-block">
+            <div class="villa-characteristic"><img src="img/icon-square.svg" alt="">785 m<sup>2</sup></div>
+            <div class="villa-characteristic"><img src="img/icon-three-storey.svg" alt="">Three-story</div>
+            <div class="villa-characteristic"><img src="img/icon-bedrooms.svg" alt="">Four bedrooms</div>
+            <div class="villa-characteristic"><img src="img/icon-parking.svg" alt="">Three parking spaces</div>
+            <div class="villa-characteristic"><img src="img/icons-pool.svg" alt="">52 m<sup>2</sup> pool</div>
+            <div class="villa-characteristic"><img src="img/icon-view-sea.svg" alt="">Sea view</div>
+          </div>
+          <div class="accordion d-block d-md-none">
+            <div class="accordion__item">
+              <div class="accordion__title">
+                <img class="accordion__arrow" src="img/accordion-arrow.svg" alt="">
+                <img class="accordion__arrow active" src="img/accordion-arrow-active.svg" alt="">
+                <div class="accordion__title-text">Specifications Type B</div>
+              </div>
+              <div class="accordion__content">
+                <div class="villa-characteristics">
+                  <div class="villa-characteristic"><img src="img/icon-square.svg" alt="">785 m<sup>2</sup></div>
+                  <div class="villa-characteristic"><img src="img/icon-three-storey.svg" alt="">Three-story</div>
+                  <div class="villa-characteristic"><img src="img/icon-bedrooms.svg" alt="">Four bedrooms</div>
+                  <div class="villa-characteristic"><img src="img/icon-parking.svg" alt="">Three parking spaces</div>
+                  <div class="villa-characteristic"><img src="img/icons-pool.svg" alt="">52 m<sup>2</sup> pool</div>
+                  <div class="villa-characteristic"><img src="img/icon-view-sea.svg" alt="">Sea view</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-5">
+          <div class="lvv-villas-carousel-wrapper">
+            <div class="villa-type d-block d-lg-none">Type B</div>
+            <div class="lvv-villas-price">from <span>$1M</span></div>
+            <div class="lvv-villas-carousel">
+              <div class="carousel-item">
+                <img class="img-responsive" src="img/villas-img-1-1.jpg" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="img-responsive" src="img/villas-img-1-1.jpg" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="img-responsive" src="img/villas-img-1-1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center justify-content-lg-start type-c">
+        <div class="col-md-8 col-lg-5">
+          <div class="lvv-villas-carousel-wrapper">
+            <div class="villa-type d-block d-lg-none">Type C</div>
+            <div class="lvv-villas-price">from <span>$1.6M</span></div>
+            <div class="lvv-villas-carousel">
+              <div class="carousel-item">
+                <img class="img-responsive" src="img/villas-img-1-1.jpg" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="img-responsive" src="img/villas-img-1-1.jpg" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="img-responsive" src="img/villas-img-1-1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-6">
+          <div class="villa-type d-none d-lg-block">Type C</div>
+          <div class="villa-characteristics border d-none d-md-block">
+            <div class="villa-characteristic"><img src="img/icon-square.svg" alt="">1139 m<sup>2</sup></div>
+            <div class="villa-characteristic"><img src="img/icon-four-storey.svg" alt="">Four-story</div>
+            <div class="villa-characteristic"><img src="img/icon-bedrooms.svg" alt="">Three bedrooms</div>
+            <div class="villa-characteristic"><img src="img/icon-parking.svg" alt="">Three parking spaces</div>
+            <div class="villa-characteristic"><img src="img/icons-pool.svg" alt="">56 m<sup>2</sup> pool</div>
+            <div class="villa-characteristic"><img src="img/icon-view-sea.svg" alt="">Tropical garden view</div>
+          </div>
+          <div class="accordion d-block d-md-none">
+            <div class="accordion__item">
+              <div class="accordion__title">
+                <img class="accordion__arrow" src="img/accordion-arrow.svg" alt="">
+                <img class="accordion__arrow active" src="img/accordion-arrow-active.svg" alt="">
+                <div class="accordion__title-text">Specifications Type C</div>
+              </div>
+              <div class="accordion__content">
+                <div class="villa-characteristics">
+                  <div class="villa-characteristic"><img src="img/icon-square.svg" alt="">1139 m<sup>2</sup></div>
+                  <div class="villa-characteristic"><img src="img/icon-four-storey.svg" alt="">Four-story</div>
+                  <div class="villa-characteristic"><img src="img/icon-bedrooms.svg" alt="">Three bedrooms</div>
+                  <div class="villa-characteristic"><img src="img/icon-parking.svg" alt="">Three parking spaces</div>
+                  <div class="villa-characteristic"><img src="img/icons-pool.svg" alt="">56 m<sup>2</sup> pool</div>
+                  <div class="villa-characteristic"><img src="img/icon-view-sea.svg" alt="">Tropical garden view</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lvv-promoblock">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-12">
+          <div class="lvv-promoblock-wrapper">
+            <img src="img/icon-plan.svg" alt="">
+            <div class="row justify-content-center">
+              <div class="col-lg-7 col-xxl-6 content">
+                <button class="lvv-btn-accent">Get a personalised offer</button>
+                <div>You can always tell us about your preferences and the layout can be changed upon request.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lvv-ecology">
+    <div class="lvv-ecology-scene" id="scene-2">
+      <div class="lvv-ecology-bg" data-depth="0.1"></div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-10 col-xxl-8">
+          <div class="lvv-ecology-content">
+            <h2 class="lvv-h2">Green Building</h2>
+            <div class="desc">Each villa is EDGE certified — an internationally-recognized standard for environmentally sustainable buildings.</div>
+            <div class="lvv-ecology-benefits">
+              <div class="benefit">
+                <img src="img/ecolog-img-1.svg" alt="">
+                Savings on utility bills of more than 40%
+              </div>
+              <div class="benefit">
+                <img src="img/ecolog-img-2.svg" alt="">
+                Increase in resale value
+              </div>
+              <div class="benefit">
+                <img src="img/ecolog-img-3.svg" alt="">
+                International certification
+              </div>
+            </div>
+            <div class="lvv-ecology-bottom-links d-none d-md-block">
+              <a href="#">
+                <img src="img/ecology-edge.jpg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/ecology-ifc.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="development-progress" class="lvv-development-progress">
+    <div class="container">
+      <div class="row justify-content-center justify-content-lg-start align-items-lg-center">
+        <div class="col-lg-5 col-xl-5 col-xxl-4 offset-xxl-1 col-left">
+          <div class="col-left-wrapper">
+            <div class="title">La Vista Villas</div>
+            <h2 class="lvv-h2">Development<br> Progress</h2>
+          </div>
+        </div>
+        <div class="col-lg-7 col-xl-6 col-right d-none d-lg-block">
+          <div class="steps">
+            <div class="step done">
+              <div class="step-number">STEP 1</div>
+              <div class="step-circle"><img src="img/icon-step-ok.svg" alt=""></div>
+              <div class="step-content">
+                <div class="step-period">06.2021 — 06.2022</div>
+                <div class="step-title">Design and preparation for construction</div>
+                <div class="step-desc">The project concept is developed, all tender drawings are prepared, consultations are held with engineers and experts in green building construction.</div>
+              </div>
+            </div>
+            <div class="step done">
+              <div class="step-number">STEP 2</div>
+              <div class="step-circle"><img src="img/icon-step-ok.svg" alt=""></div>
+              <div class="step-content">
+                <div class="step-period">07.2022 — 08.2022</div>
+                <div class="step-title">Receipt of documents</div>
+                <div class="step-desc">Collection and submission of documents for a construction permit. Tender for the main contractor is held.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">STEP 3</div>
+              <div class="step-circle"><img src="img/icon-step-construction.svg" alt=""></div>
+              <div class="step-content">
+                <div class="step-period">09.2022 — 06.2024</div>
+                <div class="step-title">Construction</div>
+                <div class="step-desc">The project is constructed, starting with a pit and finishing with the villas. We will be publishing progress photos during the construction.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">STEP 4</div>
+              <div class="step-circle"><img src="img/icon-step-preparation.svg" alt=""></div>
+              <div class="step-content">
+                <div class="step-period">07.2024 — 08.2024</div>
+                <div class="step-title">Preparation for guest check-in</div>
+                <div class="step-desc">Finishing touches and set up of common areas, preparation for commissioning the villas.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">STEP 5</div>
+              <div class="step-circle"><img src="img/icon-step-post.svg" alt=""></div>
+              <div class="step-content">
+                <div class="step-period">08.2024 — 09.2024</div>
+                <div class="step-title">Post-construction phase</div>
+                <div class="step-desc">Preparation is done for the ownership transfer and associated documentation.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">STEP 6</div>
+              <div class="step-circle"><img src="img/icon-step-guest.svg" alt=""></div>
+              <div class="step-content">
+                <div class="step-period">10.2024</div>
+                <div class="step-title">Owners move in</div>
+                <div class="step-desc">Welcome to your new home!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-right d-block d-lg-none">
+          <div class="accordion">
+            <div class="accordion__item">
+              <div class="accordion__title">
+                <img class="accordion__arrow" src="img/accordion-arrow.svg" alt="">
+                <img class="accordion__arrow active" src="img/accordion-arrow-active.svg" alt="">
+                <div class="accordion__title-text">
+                  <div class="step-circle"><img src="img/icon-step-ok.svg" alt=""></div>
+                  <div>
+                    <div class="step-period">06.2021 — 06.2022</div>
+                    <div class="step-title">Design and preparation for construction</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__content">
+                The project concept is developed, all tender drawings are prepared, consultations are held 
+                with engineers and experts in green building construction.
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__title">
+                <img class="accordion__arrow" src="img/accordion-arrow.svg" alt="">
+                <img class="accordion__arrow active" src="img/accordion-arrow-active.svg" alt="">
+                <div class="accordion__title-text">
+                  <div class="step-circle"><img src="img/icon-step-ok.svg" alt=""></div>
+                  <div>
+                    <div class="step-period">07.2022 — 08.2022</div>
+                    <div class="step-title">Receipt of documents</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__content">
+                Collection and submission of documents for a construction permit. Tender for the main contractor is held.
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__title">
+                <img class="accordion__arrow" src="img/accordion-arrow.svg" alt="">
+                <img class="accordion__arrow active" src="img/accordion-arrow-active.svg" alt="">
+                <div class="accordion__title-text">
+                  <div class="step-circle"><img src="img/icon-step-construction.svg" alt=""></div>
+                  <div>
+                    <div class="step-period">09.2022 — 06.2024</div>
+                    <div class="step-title">Construction</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__content">
+                The project is constructed, starting with a pit and finishing with the villas. We will be publishing progress photos during the construction.
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__title">
+                <img class="accordion__arrow" src="img/accordion-arrow.svg" alt="">
+                <img class="accordion__arrow active" src="img/accordion-arrow-active.svg" alt="">
+                <div class="accordion__title-text">
+                  <div class="step-circle"><img src="img/icon-step-preparation.svg" alt=""></div>
+                  <div>
+                    <div class="step-period">07.2024 — 08.2024</div>
+                    <div class="step-title">Preparation for guest check-in</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__content">
+                Finishing touches and set up of common areas, preparation for commissioning the villas.
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__title">
+                <img class="accordion__arrow" src="img/accordion-arrow.svg" alt="">
+                <img class="accordion__arrow active" src="img/accordion-arrow-active.svg" alt="">
+                <div class="accordion__title-text">
+                  <div class="step-circle"><img src="img/icon-step-post.svg" alt=""></div>
+                  <div>
+                    <div class="step-period">08.2024 — 09.2024</div>
+                    <div class="step-title">Post-construction phase</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__content">
+                Preparation is done for the ownership transfer and associated documentation.
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__title">
+                <img class="accordion__arrow" src="img/accordion-arrow.svg" alt="">
+                <img class="accordion__arrow active" src="img/accordion-arrow-active.svg" alt="">
+                <div class="accordion__title-text">
+                  <div class="step-circle"><img src="img/icon-step-guest.svg" alt=""></div>
+                  <div>
+                    <div class="step-period">10.2024</div>
+                    <div class="step-title">Owners move in</div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__content">
+                Welcome to your new home!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lvv-contact-block">
+    <div class="container">
+      <img class="contact-block-img" src="img/contact-block-img.jpg" alt="">
+      <div class="row justify-content-md-center justify-content-lg-start">
+        <div class="col-md-8 col-lg-6 col-xl-5 offset-xxl-1">
+          <div class="lvv-contact-form violet">
+            <form>
+              <div class="top-text">
+                Leave your contact details to receive a comprehensive presentation about the project
+                <img src="img/contact-form-arrow-down.svg" alt="">
+              </div>
+              <div class="form-tablet-desktop d-none d-md-block">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Phone">
+                <input type="text" placeholder="E-mail">
+                <button class="button-form" type="submit">Get a presentation</button>
+              </div>
+              <div class="form-tablet-desktop d-block d-md-none">
+                <a class="button-form" href="#mf-bottom" data-modal>Get a presentation</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="lvv-footer">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-xxl-4">
+          <h5 class="lvv-h5 d-block d-md-none">Keep up to date with us on our social networks:</h5>
+          <div class="social-links d-block d-md-none">
+            <a href="#"><img src="img/icon-facebook.svg" alt=""></a>
+            <a href="#"><img src="img/icon-instagram.svg" alt=""></a>
+            <a href="#"><img src="img/icon-whatsapp.svg" alt=""></a>
+            <a href="#"><img src="img/icon-telegram.svg" alt=""></a>
+          </div>
+          <h5 class="lvv-h5">Sales Office</h5>
+          <p class="adress">34/20, Moo 7, Tambon Chalong, Amphure Muang Phuket, Phuket Province</p>
+          <a class="footer-link" href="tel:+66847458525">+66 847 458 525</a>
+          <a class="footer-link" href="mailto:sales@lavistavillas.com">sales@lavistavillas.com</a>
+          <button class="lvv-btn-accent">Directions to La Vista Villas</button>
+          <p class="footer-text violet d-none d-lg-block">If you are interested in our offer, or you have any questions, please contact us and our managers will help choose the best option for you.</p>
+        </div>
+        <div class="col-md-6 col-xxl-4 offset-xxl-2">
+          <h5 class="lvv-h5 d-none d-md-block">Keep up to date with us on our social networks:</h5>
+          <div class="social-links d-none d-md-block">
+            <a href="#"><img src="img/icon-facebook.svg" alt=""></a>
+            <a href="#"><img src="img/icon-instagram.svg" alt=""></a>
+            <a href="#"><img src="img/icon-whatsapp.svg" alt=""></a>
+            <a href="#"><img src="img/icon-telegram.svg" alt=""></a>
+          </div>
+          <h5 class="lvv-h5">Our projects:</h5>
+          <div class="projects">
+            <a href="https://layangreenpark.com/"><img src="img/icon-layan.svg" alt=""></a>
+            <a href="https://lavistavillas.com/"><img src="img/icon-lavista.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">Copyright © 2022 La Vista Villa. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.1.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+  <script src="libs/flickity.pkgd.min.js"></script>
+  <script src="libs/accordion.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

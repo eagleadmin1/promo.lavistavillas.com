@@ -1,0 +1,189 @@
+.lvv-contact-form {
+  position: relative;
+  padding: 36px 80px;
+  background-color: #fff;
+  border-radius: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.lvv-contact-form form {
+  max-width: 256px;
+  margin: 0 auto;
+}
+
+.lvv-contact-form .button-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  height: 51px;
+  border: none;
+  border-radius: 5px;
+}
+
+.lvv-contact-form .bottom-text, .lvv-contact-form .top-text {
+  position: relative;
+}
+
+.lvv-contact-form.white .bottom-text img {
+  position: absolute;
+  top: -44px;
+  right: -58px;
+}
+
+.lvv-contact-form.white {
+  box-shadow: 0 6px 6px rgba(94, 96, 206, 0.16);
+}
+
+.lvv-contact-form.white input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 16px;
+  border: 1px solid #8A8A8A;
+  border-radius: 5px;
+  color: #5e60ce;
+  background-color: transparent;
+  text-align: center;
+}
+
+.lvv-contact-form.white input:placeholder {
+  color: #8A8A8A;
+}
+
+.lvv-contact-form.white .button-form {
+  color: #fff;
+  background-color: #5E60CE;
+  font-size: 16px;
+}
+
+.lvv-contact-form.white .bottom-text {
+  color: #5e60ce;
+  margin-top: 16px;
+}
+
+.lvv-contact-form.white input:focus-visible {
+  outline: none;
+  border: 1px solid #5E60CE;
+}
+
+.lvv-contact-form.violet {
+  background-color: rgba(94, 96, 206, 0.9);
+}
+
+.lvv-contact-form.violet input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 16px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  background-color: transparent;
+  text-align: center;
+}
+
+.lvv-contact-form.violet input::placeholder {
+  color: #fff;
+}
+
+.lvv-contact-form.violet .button-form {
+  background-color: #72EFDD;
+  color: #5E60CE;
+  font-size: 16px;
+}
+
+.lvv-contact-form.violet .top-text {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.lvv-contact-form.violet input:focus-visible {
+  outline: none;
+  color: #5e60ce; 
+  background-color: #fff;
+  border: 1px solid #5E60CE;
+}
+
+.lvv-contact-form.violet .top-text img {
+  position: absolute;
+  top: 32px;
+  right: -70px;
+}
+
+.lvv-contact-form .price-from {
+  font-family: 'OpenSans';
+  position: absolute;
+  top: -33px;
+  right: -50px;
+  width: 118px;
+  height: 118px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #5E60CE;
+  color: #fff;
+  border-radius: 50%;
+  z-index: 15;
+  line-height: 1.4;
+  transform: rotate(-5deg);
+}
+
+.lvv-contact-form .price-from span {
+  font-size: 20px;
+}
+
+.lvv-contact-form-overlay {
+  background-color: #fff;
+}
+
+.lvv-contact-form-modal {
+  padding: 0 40px;
+  position: relative;
+  box-shadow: none;
+  max-width: 528px;
+  border-radius: 25px;
+  width: 100%;
+}
+
+.lvv-contact-form-modal .modal-close {
+  cursor: pointer;
+  position: absolute;
+  top: -30px;
+  right: 10px;
+}
+
+@media (max-width: 767.98px) {
+  .lvv-contact-form {
+    padding: 22px 40px;
+  }
+  .lvv-contact-form .price-from {
+    top: -50px;
+    right: -25px;
+    width: 70px;
+    height: 70px;
+    font-size: 12px;
+  }
+  .lvv-contact-form .price-from span {
+    font-size: 16px;
+  }
+  .lvv-contact-form .button-form {
+    font-size: 14px !important;
+  }
+  .lvv-contact-form.white .bottom-text {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .lvv-contact-form.white .bottom-text img {
+    top: -40px;
+  }
+  .lvv-contact-form.violet .top-text img {
+    top: 18px;
+  }
+  .lvv-contact-form.violet .top-text {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}
