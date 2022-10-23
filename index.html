@@ -75,8 +75,8 @@
             <button class="lvv-btn-accent">Get a special offer</button>
             <a class="lvv-nav-item phone" href="tel:+66847458525">+66 847 458 525</a>
             <div class="social-links">
-              <a href="#"><img src="img/icon-whatsapp.svg" alt=""></a>
-              <a href="#"><img src="img/icon-telegram.svg" alt=""></a>
+              <a href="https://api.whatsapp.com/send?phone=66821060740"><img src="img/icon-whatsapp.svg" alt=""></a>
+              <a href="tg://resolve?domain=poltarinka"><img src="img/icon-telegram.svg" alt=""></a>
             </div>
           </div>
         </div>
@@ -84,37 +84,57 @@
     </div>
   </div>
 
-  <!-- <div id="mf-top" class="modal">
+  <div id="cm-top" class="modal">
     <a class="modal-close" rel="modal:close"><img src="img/modal-close.svg" alt=""></a>
     <div class="lvv-contact-form white">
-      <form action="#">
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Phone">
-        <input type="text" placeholder="E-mail">
-        <button class="button-form" type="submit">Get a special offer</button>
-        <div class="bottom-text">
-          Receive a special offer from one of our representatives today
-          <img src="img/contact-form-arrow-up.svg" alt="">
+      <form id="cf-top-mobile">
+        <div class="cf-step-1">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Phone">
+          <input type="text" placeholder="E-mail">
+          <button class="button-form" type="submit">Get a special offer</button>
+          <div class="bottom-text">
+            Receive a special offer from one of our representatives today
+            <img src="img/contact-form-arrow-up.svg" alt="">
+          </div>
+        </div>
+        <div class="cf-thanks cf-step-2">
+          Thank you for your data! Our specialists will contact you soon.
+          <div class="social-links">
+            <a href="https://api.whatsapp.com/send?phone=66821060740"><img src="img/icon-whatsapp.svg" alt=""></a>
+            <a href="tg://resolve?domain=poltarinka"><img src="img/icon-telegram.svg" alt=""></a>
+          </div>
+          <div class="bottom-text">Write to business accounts right now</div>
         </div>
       </form>
     </div>
   </div>
 
-  <div id="mf-bottom" class="modal">
+  <div id="cm-bottom" class="modal">
     <a class="modal-close" rel="modal:close"><img src="img/modal-close.svg" alt=""></a>
     <div class="lvv-contact-form violet">
-      <form action="#">
-        <div class="top-text">
-          Receive a special offer from one of our representatives today
-          <img src="img/contact-form-arrow-down.svg" alt="">
+      <form id="cf-bottom-mobile">
+        <div class="cf-step-1">
+          <div class="top-text">
+            Receive a special offer from one of our representatives today
+            <img src="img/contact-form-arrow-down.svg" alt="">
+          </div>
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Phone">
+          <input type="text" placeholder="E-mail">
+          <button class="button-form" type="submit">Get a special offer</button>
         </div>
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Phone">
-        <input type="text" placeholder="E-mail">
-        <button class="button-form" type="submit">Get a special offer</button>
+        <div class="cf-thanks cf-step-2">
+          Thank you for your data! Our specialists will contact you soon.
+          <div class="social-links">
+            <a href="https://api.whatsapp.com/send?phone=66821060740"><img src="img/icon-whatsapp.svg" alt=""></a>
+            <a href="tg://resolve?domain=poltarinka"><img src="img/icon-telegram.svg" alt=""></a>
+          </div>
+          <div class="bottom-text">Write to business accounts right now</div>
+        </div>
       </form>
     </div>
-  </div> -->
+  </div>
 
   <div class="lvv-fs">
     <div class="lvv-fs-tablet d-block d-lg-none"></div>
@@ -132,20 +152,31 @@
               <div class="price-from">
                 from
                 <span class="d-none d-md-block">$920,000</span>
-                <span class="d-block d-md-none">$920K</span></div>
-              <form id="cf">
-                <div class="form-tablet-desktop d-none d-md-block">
-                  <input name="name" type="text" placeholder="Name">
-                  <input name="phone" type="text" placeholder="Phone">
-                  <input name="email" type="text" placeholder="E-mail">
-                  <button class="button-form" type="submit">Get a special offer</button>
+                <span class="d-block d-md-none">$920K</span>
+              </div>
+              <form id="cf-top">
+                <div class="cf-step-1">
+                  <div class="form-tablet-desktop d-none d-md-block">
+                    <input name="name" type="text" placeholder="Name">
+                    <input name="phone" type="text" placeholder="Phone">
+                    <input name="email" type="text" placeholder="E-mail">
+                    <button class="button-form" type="submit">Get a special offer</button>
+                  </div>
+                  <div class="form-mobile d-block d-md-none">
+                    <a class="button-form" href="#cm-top" data-modal>Get a special offer</a>
+                  </div>
+                  <div class="bottom-text">
+                    Receive a special offer from one of our representatives today
+                    <img src="img/contact-form-arrow-up.svg" alt="">
+                  </div>
                 </div>
-                <div class="form-mobile d-block d-md-none">
-                  <a class="button-form" href="#mf-top" data-modal>Get a special offer</a>
-                </div>
-                <div class="bottom-text">
-                  Receive a special offer from one of our representatives today
-                  <img src="img/contact-form-arrow-up.svg" alt="">
+                <div class="cf-thanks cf-step-2">
+                  Thank you for your data! Our specialists will contact you soon.
+                  <div class="social-links">
+                    <a href="https://api.whatsapp.com/send?phone=66821060740"><img src="img/icon-whatsapp.svg" alt=""></a>
+                    <a href="tg://resolve?domain=poltarinka"><img src="img/icon-telegram.svg" alt=""></a>
+                  </div>
+                  <div class="bottom-text">Write to business accounts right now</div>
                 </div>
               </form>
             </div>
@@ -615,19 +646,29 @@
       <div class="row justify-content-md-center justify-content-lg-start">
         <div class="col-md-8 col-lg-6 col-xl-5 offset-xxl-1">
           <div class="lvv-contact-form violet">
-            <form>
-              <div class="top-text">
-                Leave your contact details to receive a comprehensive presentation about the project
-                <img src="img/contact-form-arrow-down.svg" alt="">
+            <form id="cf-bottom">
+              <div class="cf-step-1">
+                <div class="top-text">
+                  Leave your contact details to receive a comprehensive presentation about the project
+                  <img src="img/contact-form-arrow-down.svg" alt="">
+                </div>
+                <div class="form-tablet-desktop d-none d-md-block">
+                  <input name="name" type="text" placeholder="Name">
+                  <input name="phone" type="text" placeholder="Phone">
+                  <input name="email" type="text" placeholder="E-mail">
+                  <button class="button-form" type="submit">Get a presentation</button>
+                </div>
+                <div class="form-mobile d-block d-md-none">
+                  <a class="button-form" href="#cm-bottom" data-modal>Get a presentation</a>
+                </div>
               </div>
-              <div class="form-tablet-desktop d-none d-md-block">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Phone">
-                <input type="text" placeholder="E-mail">
-                <button class="button-form" type="submit">Get a presentation</button>
-              </div>
-              <div class="form-tablet-desktop d-block d-md-none">
-                <a class="button-form" href="#mf-bottom" data-modal>Get a presentation</a>
+              <div class="cf-thanks cf-step-2">
+                Thank you for your data! Our specialists will contact you soon.
+                <div class="social-links">
+                  <a href="https://api.whatsapp.com/send?phone=66821060740"><img src="img/icon-whatsapp.svg" alt=""></a>
+                  <a href="tg://resolve?domain=poltarinka"><img src="img/icon-telegram.svg" alt=""></a>
+                </div>
+                <div class="bottom-text">Write to business accounts right now</div>
               </div>
             </form>
           </div>
@@ -642,10 +683,10 @@
         <div class="col-md-6 col-xxl-4">
           <h5 class="lvv-h5 d-block d-md-none">Keep up to date with us on our social networks:</h5>
           <div class="social-links d-block d-md-none">
-            <a href="#"><img src="img/icon-facebook.svg" alt=""></a>
-            <a href="#"><img src="img/icon-instagram.svg" alt=""></a>
-            <a href="#"><img src="img/icon-whatsapp.svg" alt=""></a>
-            <a href="#"><img src="img/icon-telegram.svg" alt=""></a>
+            <a href="https://www.facebook.com/lavistavillas"><img src="img/icon-facebook.svg" alt=""></a>
+            <a href="https://www.instagram.com/lavistavillas/?igshid=YmMyMTA2M2Y%3D"><img src="img/icon-instagram.svg" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=66821060740"><img src="img/icon-whatsapp.svg" alt=""></a>
+            <a href="tg://resolve?domain=poltarinka"><img src="img/icon-telegram.svg" alt=""></a>
           </div>
           <h5 class="lvv-h5">Sales Office</h5>
           <p class="adress">34/20, Moo 7, Tambon Chalong, Amphure Muang Phuket, Phuket Province</p>
@@ -657,10 +698,10 @@
         <div class="col-md-6 col-xxl-4 offset-xxl-2">
           <h5 class="lvv-h5 d-none d-md-block">Keep up to date with us on our social networks:</h5>
           <div class="social-links d-none d-md-block">
-            <a href="#"><img src="img/icon-facebook.svg" alt=""></a>
-            <a href="#"><img src="img/icon-instagram.svg" alt=""></a>
-            <a href="#"><img src="img/icon-whatsapp.svg" alt=""></a>
-            <a href="#"><img src="img/icon-telegram.svg" alt=""></a>
+            <a href="https://www.facebook.com/lavistavillas"><img src="img/icon-facebook.svg" alt=""></a>
+            <a href="https://www.instagram.com/lavistavillas/?igshid=YmMyMTA2M2Y%3D"><img src="img/icon-instagram.svg" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=66821060740"><img src="img/icon-whatsapp.svg" alt=""></a>
+            <a href="tg://resolve?domain=poltarinka"><img src="img/icon-telegram.svg" alt=""></a>
           </div>
           <h5 class="lvv-h5">Our projects:</h5>
           <div class="projects">
@@ -674,10 +715,9 @@
   </footer>
 
   <script src="js/jquery-3.1.1.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-
   <script src="libs/flickity.pkgd.min.js"></script>
   <script src="libs/accordion.js"></script>
   <script src="js/form.js"></script>

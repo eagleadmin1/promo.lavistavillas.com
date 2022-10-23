@@ -5,6 +5,10 @@
   border-radius: 20px;
   font-size: 14px;
   text-align: center;
+  min-height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .lvv-contact-form form {
@@ -46,6 +50,14 @@
   color: #5e60ce;
   background-color: transparent;
   text-align: center;
+}
+
+.lvv-contact-form input.error {
+  border: 1px solid #D71C1C;
+}
+
+.lvv-contact-form input.error:focus-visible {
+  border: 1px solid #D71C1C !important;
 }
 
 .lvv-contact-form.white input:placeholder {
@@ -155,9 +167,50 @@
   right: 10px;
 }
 
+.lvv-contact-form .cf-thanks .social-links {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.lvv-contact-form.white .cf-thanks {
+  font-size: 16px;
+  color: #5e60ce;
+}
+
+.lvv-contact-form.white .cf-thanks .bottom-text {
+  font-size: 14px;
+  color: #797979;
+}
+
+.lvv-contact-form.violet .cf-thanks {
+  font-size: 16px;
+  color: #fff;
+}
+
+.lvv-contact-form.violet .cf-thanks .bottom-text {
+  font-size: 14px;
+  color: #fff;
+}
+
+.cf-thanks {
+  display: none;
+}
+
 @media (max-width: 767.98px) {
   .lvv-contact-form {
     padding: 22px 40px;
+    min-height: auto;
+  }
+  .lvv-contact-form-modal{
+    padding: 0 20px;
+  }
+  .lvv-contact-form-modal .lvv-contact-form {
+    min-height: 370px;
+  }
+  .lvv-contact-form-modal .modal-close {
+    top: -14px;
+    right: 6px;
+    z-index: 10;
   }
   .lvv-contact-form .price-from {
     top: -50px;

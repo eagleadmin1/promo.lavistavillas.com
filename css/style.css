@@ -1185,10 +1185,15 @@ body {
     border-right: 15px solid transparent;
   }
   .lvv-location-carousel .carousel-item .carousel-item-wrapper {
+    opacity: 1 !important;
     border-radius: 20px;
+    background-color: #72EFDD;
   }
   .lvv-location-carousel .carousel-item img {
     border-radius: 20px;
+  }
+  .lvv-location-carousel .bottom-text {
+    opacity: 1;
   }
   .lvv-location-carousel .carousel-item.is-selected .carousel-item-wrapper {
     transform: none;
