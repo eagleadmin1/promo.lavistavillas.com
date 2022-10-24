@@ -15,6 +15,9 @@ $(document).ready(function () {
         submitHandler: function(form) {
             $.ajax({
                 type: 'POST',
+                headers: {
+                    'Content-Type':'application/json'
+                },
                 url: 'https://dwh.villacarte.com/api/lead/create',
                 data: JSON.stringify(
                     {
@@ -32,20 +35,29 @@ $(document).ready(function () {
                         sourceForm: "Header form"
                     }
                 ),
-                dataType: 'json',
-                success:function(json){
+                success() {
                     alert("Success");
-                },
-                error: function (error) {
-                    console.log(error.response);
-                    // var link = document.createElement('a');
-                    // link.href = 'https://layangreenpark.com/agreement_sample_en.pdf';
-                    // link.download = 'agreement_sample_en.pdf' 
-                    // link.click();
-                    
                     $("#cf-top .cf-step-1").hide();
                     $("#cf-top .cf-step-2").show();
-                }  
+                },
+                error() {
+                    alert("Error");
+                }
+                // success:function(json){
+                //     alert("Success");
+                //     $("#cf-top .cf-step-1").hide();
+                //     $("#cf-top .cf-step-2").show();
+                // },
+                // error: function (error) {
+                //     alert("Error");
+                //     // console.log(error.response);
+                //     // var link = document.createElement('a');
+                //     // link.href = 'https://layangreenpark.com/agreement_sample_en.pdf';
+                //     // link.download = 'agreement_sample_en.pdf' 
+                //     // link.click();
+                    
+                    
+                // }  
             });
         }
     });
