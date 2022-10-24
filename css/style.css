@@ -623,7 +623,7 @@ body {
   height: 95px;
   left: 0;
   top: 0;
-  background: url(../img/ecology-bg-top.svg) no-repeat left -.5px / 100%;
+  background: url(../img/ecology-bg-top.svg) no-repeat left -1px / 100%;
   z-index: 10;
 }
 
