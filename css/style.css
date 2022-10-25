@@ -594,6 +594,7 @@ body {
   border: none;
   border-radius: 5px;
   transition: all .25s ease;
+  font-weight: 400;
 }
 
 .lvv-btn-accent:active {
@@ -987,7 +988,7 @@ body {
     opacity: 1;
   }
   .tablet-menu-overlay.show .container {
-    transform: translateY(0);
+    transform: translateY(60px);
   }
   .tablet-menu {
     padding: 40px 100px;
