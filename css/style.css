@@ -584,6 +584,14 @@ body {
 .lvv-promoblock .lvv-btn-accent {
   flex-shrink: 0;
   margin-right: 22px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.lvv-promoblock .lvv-btn-accent:hover {
+  color: #fff;
 }
 
 .lvv-btn-accent {
