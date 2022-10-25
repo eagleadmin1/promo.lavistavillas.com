@@ -135,7 +135,6 @@ $('#lvv-location-carousel').flickity({
     wrapAround: true,
     pageDots: false,
     selectedAttraction: 0.02,
-    // friction: 0.28,
     arrowShape: { 
         x0: 25,
         x1: 60, y1: 50,

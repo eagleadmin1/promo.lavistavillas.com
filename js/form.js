@@ -22,7 +22,7 @@ $(document).ready(function () {
                 return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
             }
         }
-        return false;
+        return '';
     };
 
     function ajaxRequest (formId, sourceForm, downloadPdf = false) {
@@ -40,11 +40,13 @@ $(document).ready(function () {
                     //     "phone": "+66696858854",
                     //     "language": "RU",
                     //     "comment": "комментарий",
+
                     //     "utmSource": "google",
                     //     "utmCampaign": "my_google_campaign",
                     //     "utmContent": "awsome_content",
                     //     "utmMedium": "cpc",
                     //     "utmTerm": "term",
+                    
                     //     "sourcePage": "promo.lavistavillas.com/ru",
                     //     "sourceForm": "Header form"
                     // }
@@ -87,7 +89,7 @@ $(document).ready(function () {
         }
     });
 
-    $("#cf-top-mobile").validate({
+    $('#cf-top-mobile').validate({
         errorPlacement: function() {},
         rules,
         submitHandler: function() {
@@ -95,19 +97,27 @@ $(document).ready(function () {
         }
     });
 
-    $("#cf-bottom").validate({
+    $('#cf-middle').validate({
         errorPlacement: function() {},
         rules,
         submitHandler: function() {
-            ajaxRequest('#cf-top', 'Bottom form', true)
+            ajaxRequest('#cf-middle', 'Middle form modal')
         }
     });
 
-    $("#cf-bottom-mobile").validate({
+    $('#cf-bottom').validate({
         errorPlacement: function() {},
         rules,
         submitHandler: function() {
-            ajaxRequest('#cf-top', 'Bottom form modal', true)
+            ajaxRequest('#cf-bottom', 'Bottom form', true)
+        }
+    });
+    
+    $('#cf-bottom-mobile').validate({
+        errorPlacement: function() {},
+        rules,
+        submitHandler: function() {
+            ajaxRequest('#cf-bottom-mobile', 'Bottom form modal', true)
         }
     });
 

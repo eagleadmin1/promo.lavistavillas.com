@@ -16,7 +16,7 @@
   margin: 0 auto;
 }
 
-.lvv-contact-form .lvv-btn-accent {
+.lvv-contact-form .lvv-btn-accent, .lvv-promoblock .lvv-btn-accent {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@
   border-radius: 5px;
 }
 
-.lvv-contact-form .lvv-btn-accent:hover {
+.lvv-contact-form .lvv-btn-accent:hover, .lvv-promoblock .lvv-btn-accent {
   color: #fff;
 }
 
@@ -159,6 +159,7 @@
 
 .lvv-contact-form-overlay {
   background-color: #fff;
+  z-index: 15;
 }
 
 .lvv-contact-form-modal {
