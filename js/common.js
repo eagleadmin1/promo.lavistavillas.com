@@ -154,7 +154,8 @@ $('a[data-modal]').click(function(event) {
   $(this).modal({
     blockerClass: "lvv-contact-form-overlay", 
     modalClass: "lvv-contact-form-modal",
-    showClose: false
+    showClose: false,
+    fadeDuration: 400
   });
   $('.lvv-header').removeClass('lvv-header-up').addClass('lvv-header-down');
   return false;

@@ -34,22 +34,6 @@ $(document).ready(function () {
                 },
                 url: 'https://dwh.villacarte.com/api/lead/create',
                 data: JSON.stringify(
-                    // {
-                    //     "name": "Test LaVista",
-                    //     "email": "test@test.com",
-                    //     "phone": "+66696858854",
-                    //     "language": "RU",
-                    //     "comment": "комментарий",
-
-                    //     "utmSource": "google",
-                    //     "utmCampaign": "my_google_campaign",
-                    //     "utmContent": "awsome_content",
-                    //     "utmMedium": "cpc",
-                    //     "utmTerm": "term",
-                    
-                    //     "sourcePage": "promo.lavistavillas.com/ru",
-                    //     "sourceForm": "Header form"
-                    // }
                     {
                         name: $(`${formId} input[name=name]`).val(),
                         email: $(`${formId} input[name=email]`).val(),
@@ -72,7 +56,7 @@ $(document).ready(function () {
 
                     if(downloadPdf) {
                         var link = document.createElement('a');
-                        link.href = $(`${formId} input[name=pdfUrl]`).val();
+                        link.href = window.location.origin + '/' + $(`${formId} input[name=pdfURL]`).val();
                         link.download = $(`${formId} input[name=pdfName]`).val();
                         link.click();
                     }
