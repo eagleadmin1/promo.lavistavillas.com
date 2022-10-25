@@ -1014,8 +1014,15 @@ body {
     text-align: center;
   }
   .tablet-menu .lvv-btn-accent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin-bottom: 30px;
+    text-decoration: none;
+  }
+  .tablet-menu .lvv-btn-accent:hover {
+    color: #fff;
   }
   .tablet-menu .social-links {
     margin-top: 30px;
@@ -1268,6 +1275,10 @@ body {
     border-bottom: none;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
+  }
+  .lvv-location-carousel .carousel-item.is-previous .carousel-item-wrapper:before,
+  .lvv-location-carousel .carousel-item.is-next .carousel-item-wrapper:before {
+    display: none;
   }
   .lvv-location-carousel .carousel-item .carousel-item-wrapper {
     opacity: 1 !important;

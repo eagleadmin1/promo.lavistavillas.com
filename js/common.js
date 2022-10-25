@@ -76,7 +76,7 @@ $('#hamburger').click(function() {
     $('#tablet-menu').toggleClass('show');
 });
 
-$('#tablet-menu .lvv-nav-item').click(function() {
+$('#tablet-menu .lvv-nav-item, #tablet-menu .lvv-btn-accent').click(function() {
     $('#hamburger').toggleClass('is-active');
     $('#tablet-menu').toggleClass('show');
     $('body').toggleClass('body-overflow-hidden');
