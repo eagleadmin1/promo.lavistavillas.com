@@ -57,7 +57,7 @@
 }
 
 .lvv-contact-form input.error {
-  border: 1px solid #D71C1C;
+  border: 1px solid #D71C1C !important;
 }
 
 .lvv-contact-form input.error:focus-visible {

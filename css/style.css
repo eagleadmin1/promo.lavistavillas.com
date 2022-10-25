@@ -262,7 +262,7 @@ body {
 }
 
 .lvv-location-carousel .carousel-item.is-selected .carousel-item-wrapper {
-  transition: all 1.4s ease;
+  transition: all 1.2s ease;
   transform: scale(1.24);
   background-color: #72EFDD;
 }
@@ -632,7 +632,7 @@ body {
   content: '';
   display: block;
   width: 100%;
-  height: 80px;
+  height: 70px;
   left: 0;
   bottom: 0;
   background-color: #fff;
@@ -854,6 +854,7 @@ body {
 .social-links a {
   display: inline-block;
   margin-right: 20px;
+  transition: transform .25s ease;
 }
 
 .footer-link {
@@ -965,7 +966,7 @@ body {
     position: fixed;
     width: 100vw;
     height: 0;
-    top: 0;
+    bottom: 0;
     left: 0;
     opacity: 0;
     transition: opacity .5s ease-in-out;
@@ -1354,7 +1355,7 @@ body {
     margin-top: 20px;
   }
   .lvv-ecology {
-    padding: 60px 0;
+    padding: 60px 0 44px 0;
   }
   .lvv-ecology-content {
     padding: 0;
@@ -1366,6 +1367,9 @@ body {
   .lvv-ecology-content .desc {
     color: #fff;
   }
+  .lvv-ecology-bottom-links a {
+    margin: 22px 10px 0 10px;
+}
   .lvv-ecology-benefits {
     background-color: #fff;
     max-width: 260px;

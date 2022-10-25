@@ -90,9 +90,10 @@
     <div class="lvv-contact-form white">
       <form id="cf-top-mobile">
         <div class="cf-step-1">
-          <input type="text" placeholder="Name">
-          <input type="text" placeholder="Phone">
-          <input type="text" placeholder="E-mail">
+          <input name="language" type="hidden" value="EN">
+          <input name="name" type="text" placeholder="Name">
+          <input name="phone" type="text" placeholder="Phone">
+          <input name="email" type="text" placeholder="E-mail">
           <button class="lvv-btn-accent" type="submit">Get a special offer</button>
           <div class="bottom-text">
             Receive a special offer from one of our representatives today
@@ -120,10 +121,11 @@
             Receive a special offer from one of our representatives today
             <img src="img/contact-form-arrow-down.svg" alt="">
           </div>
-          <input type="text" placeholder="Name">
-          <input type="text" placeholder="Phone">
-          <input type="text" placeholder="E-mail">
-          <button class="lvv-btn-accent" type="submit">Get a special offer</button>
+          <input name="language" type="hidden" value="EN">
+          <input name="name" type="text" placeholder="Name">
+          <input name="phone" type="text" placeholder="Phone">
+          <input name="email" type="text" placeholder="E-mail">
+          <button class="lvv-btn-accent" type="submit">Get a presentation</button>
         </div>
         <div class="cf-thanks cf-step-2">
           Thank you for your data! Our specialists will contact you soon.
@@ -464,6 +466,14 @@
                 <img src="img/ecology-ifc.jpg" alt="">
               </a>
             </div>
+            <div class="lvv-ecology-bottom-links d-block d-md-none">
+              <a href="#">
+                <img src="img/ecology-edge-mobile.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/ecology-ifc-mobile.png" alt="">
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -655,7 +665,9 @@
                   <img src="img/contact-form-arrow-down.svg" alt="">
                 </div>
                 <div class="form-tablet-desktop d-none d-md-block">
-                  <input name="language" type="hidden" value="EN">
+                    <input name="language" type="hidden" value="EN">
+                    <input name="pdfUrl" type="hidden" value="https://eagleadmin1.github.io/promo.lavistavillas.com/presentation_en.pdf">
+                    <input name="pdfName" type="hidden" value="presentation_en.pdf">
                     <input name="name" type="text" placeholder="Name">
                     <input name="phone" type="text" placeholder="Phone">
                     <input name="email" type="text" placeholder="E-mail">
