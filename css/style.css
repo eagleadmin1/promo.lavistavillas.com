@@ -722,6 +722,11 @@ a.lvv-btn-accent {
   display: inline-block;
   height: 45px;
   margin: 0 15px;
+  transition: transform .25s ease;
+}
+
+.lvv-ecology-bottom-links a:hover {
+  transform: scale(1.1);
 }
 
 .lvv-ecology-bottom-links img {
@@ -869,11 +874,11 @@ a.lvv-btn-accent {
   margin-bottom: 140px;
 }
 
-.lvv-footer .social-links a {
+.social-links a {
   transition: transform .25s ease;
 }
 
-.lvv-footer .social-links a:hover {
+.social-links a:hover {
   transform: scale(1.1);
 }
 
@@ -898,6 +903,11 @@ a.lvv-btn-accent {
 
 .projects a {
   display: inline-block;
+  transition: transform .25s ease;
+}
+
+.projects a:hover {
+  transform: scale(1.1);
 }
 
 .projects a:nth-of-type(1) {
