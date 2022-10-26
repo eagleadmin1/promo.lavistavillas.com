@@ -582,6 +582,7 @@ body {
 }
 
 .lvv-promoblock .lvv-btn-accent {
+  white-space: nowrap;
   margin-right: 22px;
 }
 
