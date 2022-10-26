@@ -56,7 +56,7 @@ $(document).ready(function () {
 
                     if(downloadPdf) {
                         var link = document.createElement('a');
-                        link.href = window.location.href + '/' + $(`${formId} input[name=pdfURL]`).val();
+                        link.href = $(`${formId} input[name=pdfURL]`).val();
                         link.download = $(`${formId} input[name=pdfName]`).val();
                         link.click();
                     }
