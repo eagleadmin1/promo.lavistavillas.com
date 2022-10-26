@@ -582,16 +582,7 @@ body {
 }
 
 .lvv-promoblock .lvv-btn-accent {
-  flex-shrink: 0;
   margin-right: 22px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-
-.lvv-promoblock .lvv-btn-accent:hover {
-  color: #fff;
 }
 
 .lvv-btn-accent {
@@ -605,12 +596,20 @@ body {
   font-weight: 400;
 }
 
+a.lvv-btn-accent {
+  display: inline-block;
+  padding: 15px 40px;
+  text-decoration: none;
+  text-align: center;
+}
+
 .lvv-btn-accent:active {
   background-color: #4F52D3 !important;
 }
 
 .lvv-btn-accent:hover {
   background-color: #6B6DD1;
+  color: #fff;
 }
 
 .lvv-ecology {
@@ -1014,15 +1013,8 @@ body {
     text-align: center;
   }
   .tablet-menu .lvv-btn-accent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     margin-bottom: 30px;
-    text-decoration: none;
-  }
-  .tablet-menu .lvv-btn-accent:hover {
-    color: #fff;
   }
   .tablet-menu .social-links {
     margin-top: 30px;

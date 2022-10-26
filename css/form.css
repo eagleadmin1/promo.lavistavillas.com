@@ -17,19 +17,7 @@
 }
 
 .lvv-contact-form .lvv-btn-accent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
   width: 100%;
-  height: 51px;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 15px;
-}
-
-.lvv-contact-form .lvv-btn-accent:hover {
-  color: #fff;
 }
 
 .lvv-contact-form .bottom-text, .lvv-contact-form .top-text {
