@@ -789,6 +789,10 @@ a.lvv-btn-accent {
   background-color: #5DC07A;
 }
 
+.step.done.last .step-circle::before {
+  background-color: #CDCDCD;
+}
+
 .step-number {
   flex-shrink: 0;
 }
