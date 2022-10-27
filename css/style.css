@@ -4,7 +4,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #000;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 .body-overflow-hidden {
@@ -171,7 +171,7 @@ body {
 
 .lvv-fs .lvv-h1 {
   color: #fff;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .lvv-fs .lvv-h3 {
@@ -677,6 +677,7 @@ a.lvv-btn-accent {
   display: flex;
   align-items: center;
   flex-direction: column;
+  line-height: 1.2;
 }
 
 .lvv-ecology-benefits .benefit:nth-last-of-type(2) {
@@ -742,6 +743,10 @@ a.lvv-btn-accent {
 
 .step .step-circle img {
   transition: transform .4s ease-in-out;
+}
+
+.step .step-title {
+  margin-bottom: 4px;
 }
 
 .step:hover .step-circle img {
