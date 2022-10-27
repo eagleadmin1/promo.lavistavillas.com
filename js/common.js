@@ -70,14 +70,14 @@ $('.lang ul li').on('click', function(){
     $('.lang .current-lang').text($lang);
 });
 
-$('#hamburger').click(function() {
+$('#burger').click(function() {
+    $(this).toggleClass("activated");
     $('body').toggleClass('body-overflow-hidden');
-    $(this).toggleClass('is-active');
     $('#tablet-menu').toggleClass('show');
 });
 
 $('#tablet-menu .lvv-nav-item, #tablet-menu .lvv-btn-accent, .tablet-menu-overlay').click(function() {
-    $('#hamburger').toggleClass('is-active');
+    $(this).toggleClass("activated");
     $('#tablet-menu').toggleClass('show');
     $('body').toggleClass('body-overflow-hidden');
 });

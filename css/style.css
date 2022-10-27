@@ -72,10 +72,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.lvv-header .hamburger {
-  display: none;
-}
-
 .lvv-nav {
   display: flex;
   justify-content: space-between;
@@ -141,31 +137,6 @@ body {
 .lang .current-lang {
   display: inline-block;
   margin-right: 4px;
-}
-
-.hamburger {
-  padding: 0;
-  height: 22px;
-  display: none;
-  z-index: 1000;
-}
-
-.hamburger-box {
-  width: 36px;
-  height: 22px;
-}
-
-.hamburger.is-active:hover, .hamburger:hover {
-  opacity: 1;
-}
-
-.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
-  width: 36px;
-  border-radius: 0;
-  height: 2px;
-  -webkit-transition-delay: 250ms !important;
-       -o-transition-delay: 250ms !important;
-          transition-delay: 250ms !important;
 }
 
 .lvv-fs {
@@ -993,11 +964,8 @@ a.lvv-btn-accent {
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    padding: 0 30px;
+    padding: 0 25px;
     z-index: 30;
-  }
-  .lvv-header .hamburger {
-    display: block;
   }
   .lvv-nav {
     display: none;
@@ -1061,7 +1029,7 @@ a.lvv-btn-accent {
   .phone-tablet {
     color: #000;
     text-decoration: none;
-    margin-right: 70px;
+    margin-right: 60px;
   }
   .phone-tablet:hover {
     color: #000;
@@ -1075,11 +1043,11 @@ a.lvv-btn-accent {
     display: none;
   }
   .lang ul {
-    left: -30px;
+    left: -25px;
     border-top: 5px solid transparent
   }
   .lang ul li {
-    padding: 20px 30px;
+    padding: 20px 25px;
     border-radius: 10px;
     background-color: #fff;
   }
