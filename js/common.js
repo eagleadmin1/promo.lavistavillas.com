@@ -71,13 +71,13 @@ $('.lang ul li').on('click', function(){
 });
 
 $('#burger').click(function() {
-    $(this).toggleClass("activated");
+    $('#burger').toggleClass("activated");
     $('body').toggleClass('body-overflow-hidden');
     $('#tablet-menu').toggleClass('show');
 });
 
 $('#tablet-menu .lvv-nav-item, #tablet-menu .lvv-btn-accent, .tablet-menu-overlay').click(function() {
-    $(this).toggleClass("activated");
+    $('#burger').toggleClass("activated");
     $('#tablet-menu').toggleClass('show');
     $('body').toggleClass('body-overflow-hidden');
 });
