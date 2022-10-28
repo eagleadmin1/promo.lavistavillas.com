@@ -163,8 +163,6 @@ $('a[data-modal]').click(function(event) {
 
 $('#lvv-videoblock-btn-paly').click(function() {
   $(this).hide();
-
-  // $('.lvv-videoblock-bg').toggleClass('show');
   $('#lvv-videoblock-iframe').toggleClass('show');
   $('.lvv-videoblock-bg').addClass('show');
   $('#lvv-videoblock-iframe')[0].contentWindow.postMessage(

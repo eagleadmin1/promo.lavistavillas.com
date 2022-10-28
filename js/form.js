@@ -1,11 +1,21 @@
 $(document).ready(function () {
 
+    jQuery.validator.addMethod("phone", function(phone_number, element) {
+        phone_number = phone_number.replace(/\s+/g, "");
+
+        return this.optional(element) || phone_number.match(/^(\s*)?(\+)?([-()]?\d[-()]?){9,14}(\s*)?$/);
+    }, '');
+
     const rules = {
         name: {
             required: true,
         },
         phone: {
+            phone: true,
             required: true,
+        },
+        email: {
+            email: true
         }
     }
 
