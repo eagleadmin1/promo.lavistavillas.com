@@ -72,6 +72,11 @@ $(document).ready(function () {
                     }
 
                     ym(90335278,'reachGoal','submitted');
+                    gtag('event', 'Отправка формы', 
+                        { 
+                            'event_category': 'Form', 
+                            'event_action': 'submitted', }
+                    ); 
                 },
             })
         )
