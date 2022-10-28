@@ -70,6 +70,8 @@ $(document).ready(function () {
                         link.download = $(`${formId} input[name=pdfName]`).val();
                         link.click();
                     }
+
+                    ym(90335278,'reachGoal','submitted');
                 },
             })
         )
@@ -79,7 +81,7 @@ $(document).ready(function () {
         errorPlacement: function() {},
         rules,
         submitHandler: function() {
-            ajaxRequest('#cf-top', 'Top form')
+            ajaxRequest('#cf-top', 'Top form');
         }
     });
 
@@ -87,7 +89,7 @@ $(document).ready(function () {
         errorPlacement: function() {},
         rules,
         submitHandler: function() {
-            ajaxRequest('#cf-top-mobile', 'Top form modal')
+            ajaxRequest('#cf-top-mobile', 'Top form modal');
         }
     });
 
@@ -95,7 +97,7 @@ $(document).ready(function () {
         errorPlacement: function() {},
         rules,
         submitHandler: function() {
-            ajaxRequest('#cf-middle', 'Middle form modal')
+            ajaxRequest('#cf-middle', 'Middle form modal');
         }
     });
 
@@ -103,7 +105,7 @@ $(document).ready(function () {
         errorPlacement: function() {},
         rules,
         submitHandler: function() {
-            ajaxRequest('#cf-bottom', 'Bottom form', true)
+            ajaxRequest('#cf-bottom', 'Bottom form', true);
         }
     });
     
@@ -111,7 +113,7 @@ $(document).ready(function () {
         errorPlacement: function() {},
         rules,
         submitHandler: function() {
-            ajaxRequest('#cf-bottom-mobile', 'Bottom form modal', true)
+            ajaxRequest('#cf-bottom-mobile', 'Bottom form modal', true);
         }
     });
 
