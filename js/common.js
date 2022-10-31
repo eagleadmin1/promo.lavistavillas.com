@@ -147,7 +147,13 @@ $('.lvv-villas-carousel').flickity({
     cellAlign: 'center',
     contain: true,
     wrapAround: true,
-    prevNextButtons: false,
+    autoPlay: 4000,
+    arrowShape: { 
+      x0: 15,
+      x1: 55, y1: 40,
+      x2: 65, y2: 30,
+      x3: 35
+    }
 });
 
 $('a[data-modal]').click(function(event) {

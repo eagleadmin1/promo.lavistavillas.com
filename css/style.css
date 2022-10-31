@@ -477,6 +477,19 @@ body {
   z-index: 5;
 }
 
+.lvv-villas-carousel .flickity-prev-next-button {
+  width: 34px;
+  height: 34px;
+}
+
+.lvv-villas-carousel .flickity-prev-next-button.previous {
+  left: 15px;
+}
+
+.lvv-villas-carousel .flickity-prev-next-button.next {
+  right: 15px;
+}
+
 .lvv-villas-carousel .flickity-page-dots {
   bottom: 20px;
 }
@@ -1364,6 +1377,12 @@ a.lvv-btn-accent {
     width: 10px;
     height: 10px;
     margin: 0 5px;
+  }
+  .lvv-villas-carousel .flickity-prev-next-button.previous {
+    left: 10px;
+  }
+  .lvv-villas-carousel .flickity-prev-next-button.next {
+    right: 10px;
   }
   .type-a, .type-b, .type-c {
     margin-bottom: 50px;
