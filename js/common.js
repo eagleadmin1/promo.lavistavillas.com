@@ -135,6 +135,7 @@ $('#lvv-location-carousel').flickity({
     wrapAround: true,
     pageDots: false,
     selectedAttraction: 0.02,
+    imagesLoaded: true,
     arrowShape: { 
         x0: 25,
         x1: 60, y1: 50,
@@ -148,6 +149,7 @@ $('.lvv-villas-carousel-1').flickity({
     contain: true,
     wrapAround: true,
     autoPlay: 4000,
+    imagesLoaded: true,
     arrowShape: { 
       x0: 15,
       x1: 55, y1: 40,
@@ -162,6 +164,7 @@ setTimeout( () => {
     contain: true,
     wrapAround: true,
     autoPlay: 4000,
+    imagesLoaded: true,
     arrowShape: { 
       x0: 15,
       x1: 55, y1: 40,
@@ -177,6 +180,7 @@ setTimeout( () => {
     contain: true,
     wrapAround: true,
     autoPlay: 4000,
+    imagesLoaded: true,
     arrowShape: { 
       x0: 15,
       x1: 55, y1: 40,
