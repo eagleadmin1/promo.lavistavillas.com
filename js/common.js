@@ -143,7 +143,7 @@ $('#lvv-location-carousel').flickity({
     }
 });
 
-$('.lvv-villas-carousel').flickity({
+$('.lvv-villas-carousel-1').flickity({
     cellAlign: 'center',
     contain: true,
     wrapAround: true,
@@ -154,6 +154,32 @@ $('.lvv-villas-carousel').flickity({
       x2: 65, y2: 30,
       x3: 35
     }
+});
+
+$('.lvv-villas-carousel-2').flickity({
+  cellAlign: 'center',
+  contain: true,
+  wrapAround: true,
+  autoPlay: 4000,
+  arrowShape: { 
+    x0: 15,
+    x1: 55, y1: 40,
+    x2: 65, y2: 30,
+    x3: 35
+  }
+});
+
+$('.lvv-villas-carousel-3').flickity({
+  cellAlign: 'center',
+  contain: true,
+  wrapAround: true,
+  autoPlay: 4000,
+  arrowShape: { 
+    x0: 15,
+    x1: 55, y1: 40,
+    x2: 65, y2: 30,
+    x3: 35
+  }
 });
 
 $('a[data-modal]').click(function(event) {
