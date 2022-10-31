@@ -143,7 +143,7 @@ $('#lvv-location-carousel').flickity({
     }
 });
 
-$('.lvv-villas-carousel-1, .lvv-villas-carousel-2, .lvv-villas-carousel-3').flickity({
+$('.lvv-villas-carousel-1').flickity({
     cellAlign: 'center',
     contain: true,
     wrapAround: true,
@@ -155,6 +155,36 @@ $('.lvv-villas-carousel-1, .lvv-villas-carousel-2, .lvv-villas-carousel-3').flic
       x3: 35
     }
 });
+
+setTimeout( () => {
+  $('.lvv-villas-carousel-2').flickity({
+    cellAlign: 'center',
+    contain: true,
+    wrapAround: true,
+    autoPlay: 4000,
+    arrowShape: { 
+      x0: 15,
+      x1: 55, y1: 40,
+      x2: 65, y2: 30,
+      x3: 35
+    }
+  });
+}, 500);
+
+setTimeout( () => {
+  $('.lvv-villas-carousel-3').flickity({
+    cellAlign: 'center',
+    contain: true,
+    wrapAround: true,
+    autoPlay: 4000,
+    arrowShape: { 
+      x0: 15,
+      x1: 55, y1: 40,
+      x2: 65, y2: 30,
+      x3: 35
+    }
+  });
+}, 1000);
 
 $('a[data-modal]').click(function(event) {
   $(this).modal({
