@@ -16,7 +16,9 @@
 .accordion__item .accordion__title .accordion__arrow {
 	position: absolute;
 	top: 50%; 
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%); 
+      -ms-transform: translateY(-50%); 
+          transform: translateY(-50%);
   right: 15px;
 }
 .accordion__item .accordion__content {
@@ -43,10 +45,17 @@
 
 /* burger */
 .burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 38px;
   height: 30px;
   cursor: pointer;
@@ -58,16 +67,22 @@
   width: 100%;
   height: 3px;
   background-color: #000;
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
   transition: all 0.25s;
   border-radius: 2px;
 }
 
 .burger.activated span:nth-child(1) {
-  transform: translateY(5px) rotate(45deg);
+  -webkit-transform: translateY(5px) rotate(45deg);
+      -ms-transform: translateY(5px) rotate(45deg);
+          transform: translateY(5px) rotate(45deg);
 }
 
 .burger.activated span:nth-child(2) {
-  transform: translateY(-6px) rotate(-45deg);
+  -webkit-transform: translateY(-6px) rotate(-45deg);
+      -ms-transform: translateY(-6px) rotate(-45deg);
+          transform: translateY(-6px) rotate(-45deg);
 }
 
 .burger.activated span {
@@ -84,9 +99,15 @@
   font-size: 14px;
   text-align: center;
   min-height: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .lvv-contact-form form {
@@ -111,7 +132,8 @@
 }
 
 .lvv-contact-form.white {
-  box-shadow: 0 6px 6px rgba(94, 96, 206, 0.16);
+  -webkit-box-shadow: 0 6px 6px rgba(94, 96, 206, 0.16);
+          box-shadow: 0 6px 6px rgba(94, 96, 206, 0.16);
 }
 
 .lvv-contact-form.white input {
@@ -166,6 +188,22 @@
   text-align: center;
 }
 
+.lvv-contact-form.violet input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.lvv-contact-form.violet input::-moz-placeholder {
+  color: #fff;
+}
+
+.lvv-contact-form.violet input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.lvv-contact-form.violet input::-ms-input-placeholder {
+  color: #fff;
+}
+
 .lvv-contact-form.violet input::placeholder {
   color: #fff;
 }
@@ -210,16 +248,27 @@
   right: -50px;
   width: 118px;
   height: 118px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #5E60CE;
   color: #fff;
   border-radius: 50%;
   z-index: 15;
   line-height: 1.4;
-  transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
 }
 
 .lvv-contact-form .price-from span {
@@ -234,7 +283,8 @@
 .lvv-contact-form-modal {
   padding: 0 40px;
   position: relative;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   max-width: 528px;
   border-radius: 25px;
   width: 100%;
