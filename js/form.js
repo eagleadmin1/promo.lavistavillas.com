@@ -71,7 +71,8 @@ $(document).ready(function () {
                         link.click();
                     }
 
-                    ym(90335278,'reachGoal','submitted');
+                    
+                    ym(90929167,'reachGoal','submitted')
                     gtag('event', 'Отправка формы', 
                         { 
                             'event_category': 'Form', 
