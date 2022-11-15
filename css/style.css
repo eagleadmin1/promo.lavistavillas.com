@@ -1536,14 +1536,15 @@ a.lvv-btn-accent {
   }
   .lvv-villas-price {
     left: inherit;
-    right: -5px !important;
+    right: 0 !important;
     top: -22px;
     width: 90px;
     height: 90px;
     font-size: 12px;
   }
   .lvv-villas-price span {
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 600;
   }
   .lvv-villas-carousel .carousel-item {
     border-radius: 20px;
