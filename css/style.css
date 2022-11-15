@@ -580,8 +580,8 @@ body {
   position: absolute;
   top: -12px;
   left: -12px;
-  width: 118px;
-  height: 118px;
+  width: 120px;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1536,10 +1536,10 @@ a.lvv-btn-accent {
   }
   .lvv-villas-price {
     left: inherit;
-    right: 10px !important;
+    right: -5px !important;
     top: -22px;
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     font-size: 12px;
   }
   .lvv-villas-price span {
