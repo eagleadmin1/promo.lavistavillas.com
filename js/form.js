@@ -50,11 +50,11 @@ $(document).ready(function () {
                         phone: $(`${formId} input[name=phone]`).val(),
                         language: $(`${formId} input[name=language]`).val(),
 
-                        utmSource: getUrlParameter('utmSource'),
-                        utmCampaign: getUrlParameter('utmCampaign'),
-                        utmContent: getUrlParameter('utmContent'),
-                        utmMedium: getUrlParameter('utmMedium'),
-                        utmTerm: getUrlParameter('utmTerm'),
+                        utmSource: getUrlParameter('utm_source'),
+                        utmCampaign: getUrlParameter('utm_campaign'),
+                        utmContent: getUrlParameter('utm_content'),
+                        utmMedium: getUrlParameter('utm_medium'),
+                        utmTerm: getUrlParameter('utm_term'),
 
                         sourcePage: window.location.href,
                         sourceForm: sourceForm,
