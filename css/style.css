@@ -232,7 +232,7 @@ body {
   border-radius: 30px;
 }
 
-.lvv-location-carousel .carousel-item.is-previous .carousel-item-wrapper:before 
+.lvv-location-carousel .carousel-item.is-previous .carousel-item-wrapper:before, 
 .lvv-development-progress-carousel .carousel-item.is-previous .carousel-item-wrapper:before {
   content: '';
   position: absolute;
