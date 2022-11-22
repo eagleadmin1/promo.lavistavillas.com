@@ -216,17 +216,24 @@ body {
   text-align: left;
 }
 
-.lvv-location-carousel .carousel-item {
+.lvv-development-progress-carousel {
+  margin-bottom: 60px;
+}
+
+.lvv-location-carousel .carousel-item,
+.lvv-development-progress-carousel .carousel-item {
   width: 36%;
   border: 45px solid transparent;
 }
 
-.lvv-location-carousel .carousel-item .carousel-item-wrapper {
+.lvv-location-carousel .carousel-item .carousel-item-wrapper,
+.lvv-development-progress-carousel .carousel-item .carousel-item-wrapper {
   position: relative;
   border-radius: 30px;
 }
 
-.lvv-location-carousel .carousel-item.is-previous .carousel-item-wrapper:before {
+.lvv-location-carousel .carousel-item.is-previous .carousel-item-wrapper:before 
+.lvv-development-progress-carousel .carousel-item.is-previous .carousel-item-wrapper:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -238,7 +245,8 @@ body {
   background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.lvv-location-carousel .carousel-item.is-next .carousel-item-wrapper:before {
+.lvv-location-carousel .carousel-item.is-next .carousel-item-wrapper:before,
+.lvv-development-progress-carousel .carousel-item.is-next .carousel-item-wrapper:before {
   content: '';
   position: absolute;
   width: 100%;
@@ -250,15 +258,18 @@ body {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
 }
 
-.lvv-location-carousel .carousel-item.is-previous .carousel-item-wrapper {
+.lvv-location-carousel .carousel-item.is-previous .carousel-item-wrapper,
+.lvv-development-progress-carousel .carousel-item.is-previous .carousel-item-wrapper {
   opacity: 0.6;
 }
 
-.lvv-location-carousel .carousel-item.is-next .carousel-item-wrapper {
+.lvv-location-carousel .carousel-item.is-next .carousel-item-wrapper,
+.lvv-development-progress-carousel .carousel-item.is-next .carousel-item-wrapper {
   opacity: 0.6;
 }
 
-.lvv-location-carousel .carousel-item.is-selected .carousel-item-wrapper {
+.lvv-location-carousel .carousel-item.is-selected .carousel-item-wrapper,
+.lvv-development-progress-carousel .carousel-item.is-selected .carousel-item-wrapper {
   -webkit-transition: all 1.2s ease;
   -o-transition: all 1.2s ease;
   transition: all 1.2s ease;
@@ -290,7 +301,8 @@ body {
   opacity: 1;
 }
 
-.lvv-location-carousel .carousel-item img {
+.lvv-location-carousel .carousel-item img,
+.lvv-development-progress-carousel .carousel-item img {
   width: 100%;
   border-radius: 30px;
 }
@@ -303,12 +315,14 @@ body {
           transform: translateY(-44px);
 }
 
-.lvv-location-carousel .flickity-prev-next-button.previous {
-  left: 31%;
+.lvv-location-carousel .flickity-prev-next-button.previous,
+.lvv-development-progress-carousel .flickity-prev-next-button.previous {
+  left: 32%;
 }
 
-.lvv-location-carousel .flickity-prev-next-button.next {
-  right: 31%;
+.lvv-location-carousel .flickity-prev-next-button.next,
+.lvv-development-progress-carousel .flickity-prev-next-button.next {
+  right: 32%;
 }
 
 .lvv-location-carousel .flickity-prev-next-button .flickity-button-icon {
@@ -520,7 +534,8 @@ body {
   z-index: 5;
 }
 
-.lvv-villas-carousel .flickity-prev-next-button {
+.lvv-villas-carousel .flickity-prev-next-button,
+.lvv-development-progress-carousel .flickity-prev-next-button {
   width: 34px;
   height: 34px;
 }
@@ -796,30 +811,15 @@ a.lvv-btn-accent {
 }
 
 .lvv-development-progress {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
-.lvv-development-progress .col-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.lvv-development-progress .lvv-h2 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.lvv-development-progress .col-left .title {
-  position: relative;
-  left: -25px;
-  font-family: 'OpenSans';
-  font-size: 24px;
+.lvv-development-progress .lvv-h2 span {
   color: #5e60ce;
 }
 
@@ -904,6 +904,10 @@ a.lvv-btn-accent {
           transform: translateX(-1px);
 }
 
+.step:last-of-type {
+  margin-bottom: 0;
+}
+
 .step:last-of-type .step-circle:before {
   display: none;
 }
@@ -923,7 +927,21 @@ a.lvv-btn-accent {
 }
 
 .lvv-contact-block {
-  padding: 80px 0 120px 0;
+  position: relative;
+  padding: 120px 0;
+}
+
+.lvv-contact-block:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background-color: rgba(114, 239, 221, .25);
+  z-index: -1;
 }
 
 .lvv-contact-block .container {
@@ -943,10 +961,7 @@ a.lvv-btn-accent {
 }
 
 .lvv-footer {
-  padding-top: 60px;
   background-color: rgba(114, 239, 221, .25);
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
 }
 
 .lvv-footer .lvv-btn-accent {
@@ -1037,7 +1052,8 @@ a.lvv-btn-accent {
 }
 
 @media (max-width: 1399.98px) {
-  .lvv-location-carousel .carousel-item {
+  .lvv-location-carousel .carousel-item,
+  .lvv-development-progress-carousel .carousel-item {
     width: 40%;
   }
   .lvv-ecology-bg {
@@ -1052,7 +1068,8 @@ a.lvv-btn-accent {
   .lang ul {
     left: 15px;
   }
-  .lvv-location-carousel .carousel-item {
+  .lvv-location-carousel .carousel-item,
+  .lvv-development-progress-carousel .carousel-item {
     width: 44%;
   }
   .type-a .border {
@@ -1224,7 +1241,8 @@ a.lvv-btn-accent {
   .lvv-location {
     padding: 60px 0;
   }
-  .lvv-location-carousel .carousel-item {
+  .lvv-location-carousel .carousel-item,
+  .lvv-development-progress-carousel .carousel-item {
     width: 60%;
   }
   .lvv-location-carousel .flickity-prev-next-button.previous {
@@ -1232,6 +1250,12 @@ a.lvv-btn-accent {
   }
   .lvv-location-carousel .flickity-prev-next-button.next {
     right: 20%;
+  }
+  .lvv-development-progress-carousel .flickity-prev-next-button.previous {
+    left: 22%;
+  }
+  .lvv-development-progress-carousel .flickity-prev-next-button.next {
+    right: 22%;
   }
   .lvv-location-carousel .min-to-drive {
     top: 20px;
@@ -1366,17 +1390,11 @@ a.lvv-btn-accent {
     border-top: 1px solid #DFDFDF;
     border-bottom: 1px solid #DFDFDF;
   }
-  .lvv-development-progress .col-left .title {
-    font-size: 20px;
-    text-align: center;
-    left: 0;
+  .lvv-development-progress {
+    padding-top: 70px;
   }
-  .lvv-development-progress .col-left .lvv-h2 {
-    margin-bottom: 20px;
-  }
-  .lvv-development-progress .col-left .lvv-h2 br {
-    text-align: center;
-    display: none;
+  .lvv-development-progress-carousel {
+    margin-bottom: 40px;
   }
   .lvv-development-progress .accordion__title-text {
     display: -webkit-box;
@@ -1403,24 +1421,22 @@ a.lvv-btn-accent {
   .step-title {
     font-size: 14px;
   }
-  .step:last-of-type {
-    margin-bottom: 0;
-  }
   .lvv-contact-block {
-    padding: 20px 0 70px 0;
+    padding: 10px 0 80px 0;
     text-align: center;
+  }
+  .lvv-contact-block:before {
+    height: 70%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
   }
   .contact-block-img {
     width: 66%;
     position: relative;
     right: inherit;
-    -webkit-transform: translateY(50px);
-        -ms-transform: translateY(50px);
-            transform: translateY(50px);
-  }
-  .lvv-footer {
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    -webkit-transform: translateY(60px);
+        -ms-transform: translateY(60px);
+            transform: translateY(60px);
   }
   .lvv-footer .lvv-btn-accent {
     margin-top: 0;
@@ -1456,7 +1472,8 @@ a.lvv-btn-accent {
   .lvv-location .lvv-h2 {
     margin-bottom: 12px;
   }
-  .lvv-location-carousel .carousel-item {
+  .lvv-location-carousel .carousel-item,
+  .lvv-development-progress-carousel .carousel-item {
     width: 100%;
     border-top: none;
     border-bottom: none;
@@ -1464,30 +1481,37 @@ a.lvv-btn-accent {
     border-right: 15px solid transparent;
   }
   .lvv-location-carousel .carousel-item.is-previous .carousel-item-wrapper:before,
-  .lvv-location-carousel .carousel-item.is-next .carousel-item-wrapper:before {
+  .lvv-location-carousel .carousel-item.is-next .carousel-item-wrapper:before,
+  .lvv-development-progress-carousel .carousel-item.is-previous .carousel-item-wrapper:before,
+  .lvv-development-progress-carousel .carousel-item.is-next .carousel-item-wrapper:before {
     display: none;
   }
-  .lvv-location-carousel .carousel-item .carousel-item-wrapper {
+  .lvv-location-carousel .carousel-item .carousel-item-wrapper,
+  .lvv-development-progress-carousel .carousel-item .carousel-item-wrapper {
     opacity: 1 !important;
     border-radius: 20px;
     background-color: #72EFDD;
   }
-  .lvv-location-carousel .carousel-item img {
+  .lvv-location-carousel .carousel-item img,
+  .lvv-development-progress-carousel .carousel-item img {
     border-radius: 20px;
   }
   .lvv-location-carousel .bottom-text {
     opacity: 1;
   }
-  .lvv-location-carousel .carousel-item.is-selected .carousel-item-wrapper {
+  .lvv-location-carousel .carousel-item.is-selected .carousel-item-wrapper,
+  .lvv-development-progress-carousel .carousel-item.is-selected .carousel-item-wrapper {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
   }
-  .lvv-location-carousel .flickity-prev-next-button.previous {
-    left: 15px;
+  .lvv-location-carousel .flickity-prev-next-button.previous,
+  .lvv-development-progress-carousel .flickity-prev-next-button.previous {
+    left: 25px;
   }
-  .lvv-location-carousel .flickity-prev-next-button.next {
-    right: 15px;
+  .lvv-location-carousel .flickity-prev-next-button.next,
+  .lvv-development-progress-carousel .flickity-prev-next-button.next {
+    right: 25px;
   }
   .lvv-videoblock .lvv-h2 {
     margin-bottom: 12px;
@@ -1580,7 +1604,7 @@ a.lvv-btn-accent {
     margin-top: 20px;
   }
   .lvv-ecology {
-    padding: 60px 0 44px 0;
+    padding: 60px 0;
   }
   .lvv-ecology-content {
     padding: 0;
@@ -1603,22 +1627,16 @@ a.lvv-btn-accent {
   .lvv-ecology-benefits .benefit {
     padding: 30px 40px;
   }
-  .lvv-development-progress {
-    padding-top: 60px;
-  }
-  .lvv-development-progress .col-left .title {
-    font-size: 16px;
-  }
   .lvv-contact-block {
-    padding: 0 0 60px 0;
+    padding: 0 0 70px 0;
+  }
+  .lvv-contact-block:before {
+    height: 65%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
   }
   .contact-block-img {
     width: 100%;
-  }
-  .lvv-footer {
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    padding-top: 40px;
   }
   .lvv-footer .lvv-btn-accent {
     margin-bottom: 30px;
