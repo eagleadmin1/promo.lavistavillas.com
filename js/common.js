@@ -257,7 +257,8 @@ $(document).ready(function () {
           required: true,
       },
       email: {
-          email: true
+          email: true,
+          required: true,
       }
   }
 
