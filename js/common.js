@@ -256,6 +256,9 @@ $(document).ready(function () {
           phone: true,
           required: true,
       },
+      phone2: {
+        number: true,
+    },
       email: {
           email: true,
           required: true,
@@ -301,6 +304,8 @@ $(document).ready(function () {
 
                       sourcePage: window.location.href,
                       sourceForm: sourceForm,
+
+                      botcheck: $(`${formId} input[name=phone2]`).val(),
                   }
               ),
               success() {
@@ -313,8 +318,7 @@ $(document).ready(function () {
                       link.download = $(`${formId} input[name=pdfName]`).val();
                       link.click();
                   }
-
-                  
+             
                   ym(90929167,'reachGoal','submitted')
                   gtag('event', 'Отправка формы', 
                       { 
