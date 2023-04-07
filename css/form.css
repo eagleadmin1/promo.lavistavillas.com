@@ -247,40 +247,6 @@
   right: -70px;
 }
 
-.lvv-contact-form .price-from {
-  font-family: 'OpenSans';
-  position: absolute;
-  top: -33px;
-  right: -50px;
-  width: 118px;
-  height: 118px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #5E60CE;
-  color: #fff;
-  border-radius: 50%;
-  z-index: 15;
-  line-height: 1.4;
-  -webkit-transform: rotate(-5deg);
-      -ms-transform: rotate(-5deg);
-          transform: rotate(-5deg);
-}
-
-.lvv-contact-form .price-from span {
-  font-size: 20px;
-}
-
 .lvv-contact-form-overlay {
   background-color: #fff;
   z-index: 15;
@@ -347,16 +313,6 @@
     top: -14px;
     right: 6px;
     z-index: 10;
-  }
-  .lvv-contact-form .price-from {
-    top: -50px;
-    right: -25px;
-    width: 70px;
-    height: 70px;
-    font-size: 12px;
-  }
-  .lvv-contact-form .price-from span {
-    font-size: 16px;
   }
   .lvv-contact-form .lvv-btn-accent {
     font-size: 14px !important;
