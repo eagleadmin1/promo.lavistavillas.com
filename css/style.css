@@ -859,6 +859,20 @@ a.lvv-btn-accent {
   margin-bottom: 30px;
 }
 
+.lvv-development-progress .month-year-wrapper {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.lvv-development-progress .month-year {
+  font-size: 20px;
+  padding: 0 24px;
+  background: #5E60CE;
+  border-radius: 10px;
+  display: inline-block;
+  color: #fff;
+}
+
 .lvv-development-progress .lvv-h2 span {
   color: #5e60ce;
 }
@@ -1433,6 +1447,9 @@ a.lvv-btn-accent {
   }
   .lvv-development-progress {
     padding-top: 70px;
+  }
+  .lvv-development-progress .month-year {
+    font-size: 16px;
   }
   .lvv-development-progress-carousel {
     margin-bottom: 40px;
