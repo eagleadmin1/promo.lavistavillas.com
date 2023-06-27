@@ -387,4 +387,11 @@ $(document).ready(function () {
       }
   });
 
+  var monthsRU = ['Январь' , 'Февраль' , 'Март' , 'Апрель' , 'Май' , 'Июнь' , 'Июль' , 'Август' , 'Сентябрь' , 'Октябрь' , 'Ноябрь' , 'Декабрь'];
+  var monthsEN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  var date = new Date();
+
+  $('#month-year-ru').html(monthsRU[date.getMonth()] + ' ' + date.getFullYear());
+  $('#month-year-en').html(monthsEN[date.getMonth()] + ' ' + date.getFullYear());
+
 });
