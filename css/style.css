@@ -178,11 +178,11 @@ body {
 .lvv-fs-bg-bottm-line {
   position: absolute;
   width: 100%;
-  height: 150px;
+  padding-bottom: 7.85%;
   left: 0;
   bottom: 0;
   top: inherit !important;
-  background: url(../img/fs-bg-bottom-line.svg) no-repeat bottom center / contain;
+  background: url(../img/fs-bg-bottom-line.svg) no-repeat top center / 100% auto;
 }
 
 .lvv-fs .content {
@@ -212,7 +212,7 @@ body {
 }
 
 .lvv-location .desc {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   text-align: left;
 }
 
@@ -222,14 +222,17 @@ body {
 
 .lvv-location-carousel .carousel-item,
 .lvv-development-progress-carousel .carousel-item {
-  width: 36%;
-  border: 45px solid transparent;
+  width: 44%;
+  max-width: 856px;
 }
 
 .lvv-location-carousel .carousel-item .carousel-item-wrapper,
 .lvv-development-progress-carousel .carousel-item .carousel-item-wrapper {
   position: relative;
   border-radius: 30px;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .lvv-location-carousel .carousel-item.is-previous .carousel-item-wrapper:before, 
@@ -273,9 +276,9 @@ body {
   -webkit-transition: all 1.2s ease;
   -o-transition: all 1.2s ease;
   transition: all 1.2s ease;
-  -webkit-transform: scale(1.24);
-      -ms-transform: scale(1.24);
-          transform: scale(1.24);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
   background-color: #72EFDD;
 }
 
@@ -317,12 +320,12 @@ body {
 
 .lvv-location-carousel .flickity-prev-next-button.previous,
 .lvv-development-progress-carousel .flickity-prev-next-button.previous {
-  left: 32%;
+  left: 34%;
 }
 
 .lvv-location-carousel .flickity-prev-next-button.next,
 .lvv-development-progress-carousel .flickity-prev-next-button.next {
-  right: 32%;
+  right: 34%;
 }
 
 .lvv-location-carousel .flickity-prev-next-button .flickity-button-icon {
@@ -339,7 +342,7 @@ body {
 }
 
 .lvv-videoblock {
-  background: url(../img/lvv-videoblock-bg.svg) no-repeat 50% -1px;
+  background: url(../img/lvv-videoblock-bg.svg) no-repeat center -2px / 100% auto;
   background-color: #F4F4F4;
 }
 
@@ -745,10 +748,10 @@ a.lvv-btn-accent {
   content: '';
   display: block;
   width: 100%;
-  height: 95px;
+  padding-bottom: 5.2%;  
   left: 0;
   top: 0;
-  background: url(../img/ecology-bg-top.svg) no-repeat left -1px / 100%;
+  background: url(../img/ecology-bg-top.svg) no-repeat center top / 100% auto;
   z-index: 10;
 }
 
@@ -1099,6 +1102,18 @@ a.lvv-btn-accent {
   padding: 60px 0 30px 0; 
   font-size: 14px;
   text-align: center;
+}
+
+@media (max-width: 2000px) {
+  .lvv-location-carousel .flickity-prev-next-button.previous,
+  .lvv-development-progress-carousel .flickity-prev-next-button.previous {
+    left: 30%;
+  }
+
+  .lvv-location-carousel .flickity-prev-next-button.next,
+  .lvv-development-progress-carousel .flickity-prev-next-button.next {
+    right: 30%;
+  }
 }
 
 @media (max-width: 1399.98px) {
@@ -1545,6 +1560,9 @@ a.lvv-btn-accent {
     opacity: 1 !important;
     border-radius: 20px;
     background-color: #72EFDD;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
   }
   .lvv-location-carousel .carousel-item img,
   .lvv-development-progress-carousel .carousel-item img {
@@ -1566,6 +1584,9 @@ a.lvv-btn-accent {
   .lvv-location-carousel .flickity-prev-next-button.next,
   .lvv-development-progress-carousel .flickity-prev-next-button.next {
     right: 25px;
+  }
+  #lvv-videoblock-btn-paly {
+    width: 88px;
   }
   .lvv-videoblock .lvv-h2 {
     margin-bottom: 12px;
