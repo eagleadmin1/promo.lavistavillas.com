@@ -1541,6 +1541,9 @@ a.lvv-btn-accent {
   .lvv-location .lvv-h2 {
     margin-bottom: 12px;
   }
+  .lvv-location-carousel .min-to-drive {
+    opacity: 1 !important;
+  }
   .lvv-location-carousel .carousel-item,
   .lvv-development-progress-carousel .carousel-item {
     width: 100%;
