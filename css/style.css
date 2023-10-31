@@ -859,7 +859,7 @@ a.lvv-btn-accent {
 
 .lvv-development-progress .lvv-h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .lvv-development-progress .month-year-wrapper {
@@ -981,20 +981,7 @@ a.lvv-btn-accent {
 
 .lvv-contact-block {
   position: relative;
-  padding: 120px 0;
-}
-
-.lvv-contact-block:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 50%;
-  width: 100%;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-  background-color: rgba(114, 239, 221, .25);
-  z-index: -1;
+  padding: 130px 0;
 }
 
 .lvv-contact-block .container {
@@ -1013,30 +1000,90 @@ a.lvv-btn-accent {
   max-width: 520px;
 }
 
+.lvv-project-information {
+  position: relative;
+  background-color: #F4F4F4;
+  padding-top: 200px;
+}
+
+.lvv-project-information .lvv-h2 {
+  margin-bottom: 42px;
+  text-align: center;
+}
+
+.lvv-project-information .wrapper {
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 54px 40px;
+}
+
+.lvv-project-information .item {
+  max-width: 856px;
+  margin: auto;
+  padding: 14px 0;
+  border-bottom: 1px solid #DDEAE8;
+}
+
+.lvv-project-information .item:first-of-type {
+  padding-top: 0;
+}
+
+.lvv-project-information .item:last-of-type {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.lvv-project-information .title {
+  font-family: 'OpenSans';
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.lvv-project-information .desc {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.lvv-project-information-bg-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.lvv-project-information-bg-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
 .lvv-footer {
-  background-color: rgba(114, 239, 221, .25);
+  position: relative;
+  padding-top: 80px;
+  background-color: #DCFBF7;
 }
 
 .lvv-footer .lvv-btn-accent {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 20px;
 }
 
 .lvv-footer .lvv-h5 {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 .lvv-footer p {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .footer-text.violet {
   color: #5E60CE;
   font-size: 14px;
-}
-
-.lvv-footer .social-links {
-  margin-bottom: 140px;
+  margin: 30px 0;
 }
 
 .social-links a {
@@ -1459,6 +1506,9 @@ a.lvv-btn-accent {
   .lvv-development-progress {
     padding-top: 70px;
   }
+  .lvv-development-progress .lvv-h2 {
+    margin-bottom: 20px;
+  }
   .lvv-development-progress .month-year {
     font-size: 16px;
   }
@@ -1494,11 +1544,6 @@ a.lvv-btn-accent {
     padding: 10px 0 80px 0;
     text-align: center;
   }
-  .lvv-contact-block:before {
-    height: 70%;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-  }
   .contact-block-img {
     width: 66%;
     position: relative;
@@ -1507,12 +1552,27 @@ a.lvv-btn-accent {
         -ms-transform: translateY(60px);
             transform: translateY(60px);
   }
-  .lvv-footer .lvv-btn-accent {
-    margin-top: 0;
-    margin-bottom: 10px;
+  .lvv-project-information {
+    padding-top: 100px;
   }
-  .lvv-footer .social-links {
-    margin-bottom: 70px;
+  .lvv-project-information-bg-bottom {
+    display: none;
+  }
+  .lvv-project-information .lvv-h2 {
+    margin-bottom: 20px;
+  }
+  .lvv-project-information .wrapper {
+    padding: 40px;
+  }
+  .lvv-footer {
+    padding-top: 80px;
+    margin-top: -40px;
+  }
+  .lvv-footer .lvv-btn-accent {
+    margin-top: 15px;
+  }
+  .footer-text.violet {
+    margin: 20px 0;
   }
   .copyright {
     padding-top: 30px;
@@ -1706,21 +1766,17 @@ a.lvv-btn-accent {
     padding: 30px 40px;
   }
   .lvv-contact-block {
-    padding: 0 0 70px 0;
-  }
-  .lvv-contact-block:before {
-    height: 65%;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    padding: 0 0 60px 0;
   }
   .contact-block-img {
     width: 100%;
   }
-  .lvv-footer .lvv-btn-accent {
-    margin-bottom: 30px;
+  .lvv-project-information {
+    padding-top: 80px;
   }
-  .lvv-footer .social-links {
-    margin-bottom: 30px;
+  .lvv-footer .lvv-btn-accent {
+    margin-bottom: 40px;
+    width: 100%;
   }
   .projects {
     font-size: 0;
@@ -1731,5 +1787,8 @@ a.lvv-btn-accent {
   }
   .projects a:nth-of-type(1) {
     margin-right: 0;
+  }
+  .footer-text.violet {
+    margin: 20px 0 40px 0;
   }
 }
