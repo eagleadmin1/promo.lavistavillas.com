@@ -150,7 +150,7 @@ $('.lvv-villas-carousel-1').flickity({
     wrapAround: true,
     autoPlay: 4000,
     imagesLoaded: true,
-    lazyLoad: true,
+    lazyLoad: 1,
     arrowShape: { 
       x0: 15,
       x1: 55, y1: 40,
@@ -166,7 +166,7 @@ setTimeout( () => {
     wrapAround: true,
     autoPlay: 4000,
     imagesLoaded: true,
-    lazyLoad: true,
+    lazyLoad: 1,
     arrowShape: { 
       x0: 15,
       x1: 55, y1: 40,
@@ -183,7 +183,7 @@ setTimeout( () => {
     wrapAround: true,
     autoPlay: 4000,
     imagesLoaded: true,
-    lazyLoad: true,
+    lazyLoad: 1,
     arrowShape: { 
       x0: 15,
       x1: 55, y1: 40,
