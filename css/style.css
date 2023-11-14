@@ -266,7 +266,6 @@ body {
 .lvv-location-carousel.loading,
 .lvv-development-progress-carousel.loading {
   display: flex;
-  opacity: 0;
 }
 
 .lvv-location-carousel .carousel-item,
