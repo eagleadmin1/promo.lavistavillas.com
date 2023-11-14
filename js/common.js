@@ -141,7 +141,32 @@ $('#lvv-location-carousel').flickity({
         x1: 60, y1: 50,
         x2: 70, y2: 50,
         x3: 35
-    }
+    },
+    on: {
+      ready: function () {
+        $('#lvv-location-carousel').removeClass('loading');
+      },
+    },
+});
+
+$('#lvv-development-progress').flickity({
+  cellAlign: 'center',
+  contain: true,
+  wrapAround: true,
+  pageDots: false,
+  selectedAttraction: 0.02,
+  imagesLoaded: true,
+  arrowShape: { 
+    x0: 15,
+    x1: 55, y1: 40,
+    x2: 65, y2: 30,
+    x3: 35
+  },
+  on: {
+    ready: function () {
+      $('#lvv-development-progress').removeClass('loading');
+    },
+  },
 });
 
 $('.lvv-villas-carousel-1').flickity({
@@ -150,7 +175,7 @@ $('.lvv-villas-carousel-1').flickity({
     wrapAround: true,
     autoPlay: 4000,
     imagesLoaded: true,
-    lazyLoad: true,
+    lazyLoad: 1,
     arrowShape: { 
       x0: 15,
       x1: 55, y1: 40,
@@ -166,7 +191,7 @@ setTimeout( () => {
     wrapAround: true,
     autoPlay: 4000,
     imagesLoaded: true,
-    lazyLoad: true,
+    lazyLoad: 1,
     arrowShape: { 
       x0: 15,
       x1: 55, y1: 40,
@@ -183,7 +208,7 @@ setTimeout( () => {
     wrapAround: true,
     autoPlay: 4000,
     imagesLoaded: true,
-    lazyLoad: true,
+    lazyLoad: 1,
     arrowShape: { 
       x0: 15,
       x1: 55, y1: 40,
@@ -209,21 +234,6 @@ setTimeout( () => {
     }
   });
 }, 1500);
-
-$('#lvv-development-progress').flickity({
-  cellAlign: 'center',
-  contain: true,
-  wrapAround: true,
-  pageDots: false,
-  selectedAttraction: 0.02,
-  imagesLoaded: true,
-  arrowShape: { 
-    x0: 15,
-    x1: 55, y1: 40,
-    x2: 65, y2: 30,
-    x3: 35
-  }
-});
 
 $('a[data-modal]').click(function(event) {
   $(this).modal({
