@@ -145,6 +145,7 @@ $('#lvv-location-carousel').flickity({
     on: {
       ready: function () {
         $('#lvv-location-carousel').removeClass('loading');
+        $('#lvv-location-carousel').resize();
       },
     },
 });
@@ -165,6 +166,7 @@ $('#lvv-development-progress').flickity({
   on: {
     ready: function () {
       $('#lvv-development-progress').removeClass('loading');
+      $('#lvv-development-progress').resize();
     },
   },
 });
