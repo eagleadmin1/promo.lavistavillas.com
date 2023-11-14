@@ -263,6 +263,11 @@ body {
   transition: opacity .4s ease;
 }
 
+.lvv-location-carousel div,
+.lvv-development-progress-carousel div {
+  flex-shrink: 0;
+}
+
 .lvv-location-carousel.loading,
 .lvv-development-progress-carousel.loading {
   display: flex;
