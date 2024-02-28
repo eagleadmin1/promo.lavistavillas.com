@@ -288,30 +288,40 @@ body {
           transform: scale(0.8);
 }
 
-.lvv-location-carousel .carousel-item.is-previous .carousel-item-wrapper:before, 
-.lvv-development-progress-carousel .carousel-item.is-previous .carousel-item-wrapper:before {
+.lvv-location-carousel .carousel-item .carousel-item-wrapper:before, 
+.lvv-development-progress-carousel .carousel-items .carousel-item-wrapper:before,
+.lvv-location-carousel .carousel-item .carousel-item-wrapper:before,
+.lvv-development-progress-carousel .carousel-item .carousel-item-wrapper:before {
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
+  transition: opacity 2s ease;
+}
+
+.lvv-location-carousel .carousel-item .carousel-item-wrapper, 
+.lvv-development-progress-carousel .carousel-items .carousel-item-wrapper,
+.lvv-location-carousel .carousel-item .carousel-item-wrapper,
+.lvv-development-progress-carousel .carousel-item .carousel-item-wrapper {
+  opacity: 0.6;
+}
+
+.lvv-location-carousel .carousel-item.is-previous .carousel-item-wrapper:before, 
+.lvv-development-progress-carousel .carousel-item.is-previous .carousel-item-wrapper:before {
   background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
   background: -o-linear-gradient(left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
   background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 1;
 }
 
 .lvv-location-carousel .carousel-item.is-next .carousel-item-wrapper:before,
 .lvv-development-progress-carousel .carousel-item.is-next .carousel-item-wrapper:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#FFFFFF));
   background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  opacity: 1;
 }
 
 .lvv-location-carousel .carousel-item.is-previous .carousel-item-wrapper,
@@ -324,15 +334,20 @@ body {
   opacity: 0.6;
 }
 
+.lvv-location-carousel .carousel-item .carousel-item-wrapper,
+.lvv-development-progress-carousel .carousel-item .carousel-item-wrapper {
+  -webkit-transition: transform 1.2s ease, opacity 2s ease;
+  -o-transition: transform 1.2s ease, opacity 2s ease;
+  transition: transform 1.2s ease, opacity 2s ease;
+}
+
 .lvv-location-carousel .carousel-item.is-selected .carousel-item-wrapper,
 .lvv-development-progress-carousel .carousel-item.is-selected .carousel-item-wrapper {
-  -webkit-transition: all 1.2s ease;
-  -o-transition: all 1.2s ease;
-  transition: all 1.2s ease;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
   background-color: #72EFDD;
+  opacity: 1;
 }
 
 .lvv-location-carousel .bottom-text {

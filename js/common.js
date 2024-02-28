@@ -95,38 +95,40 @@ var parallaxInstance2 = new Parallax(scene);
 
 // --------------------------------------------------------
 
-Flickity.createMethods.push('_createPrevNextCells')
+Flickity.createMethods.push('_createPrevNextCells');
+
 Flickity.prototype._createPrevNextCells = function() {
-  this.on( 'select', this.setPrevNextCells )
-}
+  this.on('select', this.setPrevNextCells);
+};
+
 Flickity.prototype.setPrevNextCells = function() {
   // remove classes
-  changeSlideClasses( this.previousSlide, 'remove', 'is-previous' )
-  changeSlideClasses( this.nextSlide, 'remove', 'is-next' )
+  changeSlideClasses(this.previousSlide, 'remove', 'is-previous');
+  changeSlideClasses(this.secondPreviousSlide, 'remove', 'is-previous');
+  changeSlideClasses(this.nextSlide, 'remove', 'is-next');
+  changeSlideClasses(this.secondNextSlide, 'remove', 'is-next');
+
   // set slides
-  if (this.selectedIndex - 1 < 0) {
-    this.previousSlide = this.slides[ this.slides.length - 1 ]
-  }
-  else {
-    this.previousSlide = this.slides[ this.selectedIndex - 1 ]
-  }
-  if (this.selectedIndex + 1 === this.slides.length) {
-    this.nextSlide = this.slides[0]
-  }
-  else {
-    this.nextSlide = this.slides[this.selectedIndex + 1]
-  }
+  var len = this.slides.length;
+  this.secondPreviousSlide = this.slides[(this.selectedIndex - 2 + len) % len];
+  this.previousSlide = this.slides[(this.selectedIndex - 1 + len) % len];
+  this.nextSlide = this.slides[(this.selectedIndex + 1) % len];
+  this.secondNextSlide = this.slides[(this.selectedIndex + 2) % len];
+
   // add classes
-  changeSlideClasses( this.previousSlide, 'add', 'is-previous' )
-  changeSlideClasses( this.nextSlide, 'add', 'is-next' )
-}
-function changeSlideClasses( slide, method, className ) {
+  changeSlideClasses(this.secondPreviousSlide, 'add', 'is-previous');
+  changeSlideClasses(this.previousSlide, 'add', 'is-previous');
+  changeSlideClasses(this.nextSlide, 'add', 'is-next');
+  changeSlideClasses(this.secondNextSlide, 'add', 'is-next');
+};
+
+function changeSlideClasses(slide, method, className) {
   if (!slide) {
-    return
+    return;
   }
-  slide.getCellElements().forEach( function( cellElem ) {
-    cellElem.classList[ method ]( className )
-  })
+  slide.getCellElements().forEach(function(cellElem) {
+    cellElem.classList[method](className);
+  });
 }
 
 $('#lvv-location-carousel').flickity({
