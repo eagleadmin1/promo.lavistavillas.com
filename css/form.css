@@ -110,12 +110,6 @@
           align-items: center;
 }
 
-.lvv-contact-form input[name='phone2'] {
-  position: absolute;
-  opacity: 0;
-  z-index: -9999;
-}
-
 .lvv-contact-form form {
   max-width: 260px;
   margin: 0 auto;

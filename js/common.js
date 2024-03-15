@@ -280,20 +280,17 @@ $(document).ready(function () {
   }, '');
 
   const rules = {
-      name: {
-          required: true,
-      },
-      phone: {
-          phone: true,
-          required: true,
-      },
-      phone2: {
-        number: true,
+    name: {
+      required: true,
     },
-      email: {
-          email: true,
-          required: true,
-      }
+    phone: {
+      phone: true,
+      required: true,
+    },
+    email: {
+      email: true,
+      required: true,
+    }
   }
 
   const getUrlParameter = function getUrlParameter(sParam) {
@@ -319,13 +316,13 @@ $(document).ready(function () {
               headers: {
                   'Content-Type':'application/json'
               },
-              url: 'https://dwh.villacarte.com/api/lead/create',
+              url: 'https://villacarte.com/api/leads',
               data: JSON.stringify(
                   {
+                      leadType: 'SALE',
                       name: $(`${formId} input[name=name]`).val(),
                       email: $(`${formId} input[name=email]`).val(),
                       phone: $(`${formId} input[name=phone]`).val(),
-                      language: $(`${formId} input[name=language]`).val(),
 
                       utmSource: getUrlParameter('utm_source'),
                       utmCampaign: getUrlParameter('utm_campaign'),
@@ -336,7 +333,7 @@ $(document).ready(function () {
                       sourcePage: window.location.href,
                       sourceForm: sourceForm,
 
-                      botcheck: $(`${formId} input[name=phone2]`).val(),
+                      comments: 'LaVista',
                   }
               ),
               success() {
