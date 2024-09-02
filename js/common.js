@@ -294,7 +294,7 @@ $(document).ready(function() {
         language: window.location.href.includes('ru') ? 'RU' : 'EN',
         sourcePage: window.location.href,
         sourceForm: 'main form',
-        googleClientId: getGoogleClientID(),
+        googleClientID: getGoogleClientID(),
         yandexClientID: getYandexClientID(),
   
         utmSource: getUrlParameter('utm_source'),
