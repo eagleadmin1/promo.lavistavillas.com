@@ -287,7 +287,7 @@ $(document).ready(function() {
       headers: {
         'Content-Type': 'application/json'
       },
-      url: 'https://layanverde.com/api/lead',
+      url: 'https://verde-back.layanview.com/api',
       data: JSON.stringify({
         leadOwner: 'Dinara',
         project: 'La Vista Villas',
